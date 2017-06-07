@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title><%= @getPreparedTitle() %></title>
+		<%- @getBlock("meta").toHTML() %>
+		<%- @getBlock("scripts").add(["/js/jquery.min.js" ,"/js/skel.min.js","/js/init.js", "/assets/js/local.js"]).toHTML() %>
+  	<%- @getBlock("styles").add(["/css/skel.css","/css/style.css","/css/style-xlarge.css"]).toHTML() %>
+	</head>
+	<body class="landing">
+		<!-- Header -->
+			<header id="header">
+				<nav id="nav">
+					<ul>
+			      <% for page in @getCollection("pages").toJSON(): %>
+			          <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+			              <a href="<%= page.url %>">
+			                  <%= page.title %>
+			              </a>
+			          </li>
+			      <% end %>
+			    </ul>
+				</nav>
+			</header>
+		<!-- Banner -->
+			<section id="banner">
+				<h2><%= @heading1 %></h2>
+				<p><%= @heading2 %></p>
+				<ul class="actions">
+					<li>
+						<a href="#" class="button big">Lorem ipsum dolor</a>
+					</li>
+				</ul>
+			</section>
+		<!-- One -->
+			<section id="one" class="wrapper style1 special">
+				<div class="container">
+					<header class="major">
+						  <%- @content %>
+					</header>
+					<div class="row 150%">
+						<% for document in @getCollection("indexrow").toJSON(): %>
+			          <%- document.contentRendered %>
+			      <% end %>
+					</div>
+				</div>
+			</section>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+<div class="4u 12u$(medium)">
+  <section class="box">
+    <i class="icon big rounded <%= @document.iconclass %>"></i>
+    <%- @content %>
+  </section>
+</div>
