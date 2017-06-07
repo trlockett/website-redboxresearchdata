@@ -1,11 +1,12 @@
 {
-  "name": "no-skeleton.docpad",
+  "name": "docs-redboxresearchdata.docpad",
   "version": "0.1.0",
-  "description": "New DocPad project without using a skeleton",
+  "description": "Docs for Redboxresearchdata",
   "dependencies": {
     "docpad": "~6.79.4",
     "docpad-plugin-coffeescript": "~2.6.0",
     "docpad-plugin-eco": "~2.2.1",
+    "docpad-plugin-ghpages": "~2.6.1",
     "docpad-plugin-livereload": "~2.9.0",
     "docpad-plugin-marked": "~2.4.0",
     "docpad-plugin-partials": "~2.11.0",
@@ -13,7 +14,8 @@
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
-    "start": "node_modules/.bin/docpad-server"
+    "start": "node_modules/.bin/docpad-server",
+    "deploy": "docpad deploy-ghpages --silent --env static"
   },
   "devDependencies": {}
 }
