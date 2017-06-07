@@ -1,6 +1,8 @@
 language: node_js
+before_script:
+- npm install
 script:
-- npm run start
+- npm run generate
 after_success:
 - npm run deploy
 env:

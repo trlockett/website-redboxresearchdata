@@ -14,10 +14,11 @@
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
     "start": "node_modules/.bin/docpad-server",
+    "test": "docpad generate --debug --silent --env static",
     "deploy": "docpad deploy-ghpages --silent --env static"
   },
   "devDependencies": {
     "destroy": "^1.0.4",
-    "docpad-plugin-ghpages": "^2.6.1"
+    "docpad-plugin-ghpages": "~2.6.1"
   }
 }
