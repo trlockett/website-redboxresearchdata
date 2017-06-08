@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<title><%= @getPreparedTitle() %></title>
 		<%- @getBlock("meta").toHTML() %>
-		<%- @getBlock("scripts").add(["js/jquery.min.js" ,"js/skel.min.js","js/init.js", "js/local.js"]).toHTML() %>
+		<%- @getBlock("scripts").add(["js/jquery.min.js" ,"js/skel.min.js","js/skel-layers.min.js","js/init.js","js/local.js"]).toHTML() %>
   	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css"]).toHTML() %>
 	</head>
 	<body class="landing">
