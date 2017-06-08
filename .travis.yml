@@ -4,7 +4,12 @@ before_script:
 script:
 - npm run test
 after_success:
-- npm run deploy
+- git config --global user.email "deploy@travis-ci.org"
+- git config --global user.name "Deployment Bot"
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: npm run deploy
 env:
   global:
   - GH_REPO="redbox-mint/docs-reboxresearchdata"
