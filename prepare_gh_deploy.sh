@@ -1,6 +1,6 @@
 #!/bin/bash
 ## from: https://gist.github.com/bewest/6100033
-echo "BUMP docs-redboxresearchdata set up $GH_REPO [via travis] for $GIT_NAME <${GIT_EMAIL}>"
+echo "BUMP website-redboxresearchdata set up $GH_REPO [via travis] for $GIT_NAME <${GIT_EMAIL}>"
 export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_NAME"

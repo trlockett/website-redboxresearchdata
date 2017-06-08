@@ -1,4 +1,6 @@
-#  [Redboxresearchdata Docs](http://docs-redboxresearchdata)
+#  [Redboxresearchdata Brochure Website](https://redbox-mint.github.io/website-redboxresearchdata/)
+
+[![Build Status](https://travis-ci.org/redbox-mint/website-redboxresearchdata.svg?branch=master)](https://travis-ci.org/redbox-mint/website-redboxresearchdata)
 
 ## License
 Creative Commons Attribution 3.0 Unported
