@@ -1,6 +1,8 @@
 {
   "name": "docs-redboxresearchdata.docpad",
   "version": "0.1.0",
+  "repository": "redbox-mint/docs-redboxresearchdata",
+  "license": "CC-BY-3.0",
   "description": "Docs for Redboxresearchdata",
   "dependencies": {
     "docpad": "~6.79.4",
