@@ -17,7 +17,7 @@ Download node.js (https://nodejs.org/en/download/)
 
 ```git pull origin master``` (Once you have cloned, stay up-to-date with remote origin at github)
 
-```git remote update; git show-branch master```
+```git remote update; git show-branch master```(Check for updates)
 
 ```cd website-redboxresearchdata```
 
