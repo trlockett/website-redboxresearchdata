@@ -32,7 +32,7 @@
 				<p><%= @heading2 %></p>
 				<ul class="actions">
 					<li>
-						<a href="#" class="button big">Lorem ipsum dolor</a>
+						<a href="#" class="image"><img src="images/RedBox_Logo_Text.png" alt="Redbox logo" width="200px" height="120px" /></a>
 					</li>
 				</ul>
 			</section>
