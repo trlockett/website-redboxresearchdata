@@ -11,7 +11,7 @@ docpadConfig = {
     getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
   collections:
     pages: -> @getCollection("html").findAllLive({type:"page"},[{order:1}]).on "add", (model) ->
-      model.setMetaDefaults({layout:"default"})
+      model.setMetaDefaults({layout:"generic"})
     indexrow: -> @getCollection("html").findAllLive({type:"indexrow"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"box"})
 }
