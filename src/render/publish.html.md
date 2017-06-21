@@ -1,6 +1,6 @@
 ---
 iconclass: "color6 fa-rocket"
-type: "indexrow"
+type: "rowcell"
 order: 3
 ---
 ### Publish

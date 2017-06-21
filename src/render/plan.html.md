@@ -1,6 +1,7 @@
 ---
 icon: checklist.png
-type: "indexrow"
+iconclass: "color6"
+type: "rowcell"
 order: 1
 ---
 ### Plan

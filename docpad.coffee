@@ -17,7 +17,7 @@ docpadConfig = {
   collections:
     pages: -> @getCollection("html").findAllLive({type:"page"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"generic"})
-    indexrow: -> @getCollection("html").findAllLive({type:"indexrow"},[{order:1}]).on "add", (model) ->
+    indexrow: -> @getCollection("html").findAllLive({type:"rowcell"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"box"})
   environments:
     development:

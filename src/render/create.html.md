@@ -1,6 +1,6 @@
 ---
 iconclass: "color9 fa-desktop"
-type: "indexrow"
+type: "rowcell"
 order: 2
 ---
 ### Create
