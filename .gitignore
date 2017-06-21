@@ -2,3 +2,4 @@ out/
 node_modules/
 docpad-debug.log
 yarn.lock
+.project

@@ -13,17 +13,17 @@ docpadConfig = {
     getHeading1: -> if @document.heading1 then @document.heading1 else @site.heading1
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
     getUrl: (document) ->
-            return @site.url + (document.url)
+      return @site.url + (document.url)
   collections:
-      pages: -> @getCollection("html").findAllLive({type:"page"},[{order:1}]).on "add", (model) ->
-        model.setMetaDefaults({layout:"generic"})
-      indexrow: -> @getCollection("html").findAllLive({type:"indexrow"},[{order:1}]).on "add", (model) ->
-        model.setMetaDefaults({layout:"box"})
+    pages: -> @getCollection("html").findAllLive({type:"page"},[{order:1}]).on "add", (model) ->
+      model.setMetaDefaults({layout:"generic"})
+    indexrow: -> @getCollection("html").findAllLive({type:"indexrow"},[{order:1}]).on "add", (model) ->
+      model.setMetaDefaults({layout:"box"})
   environments:
-        development:
-            templateData:
-                site:
-                    url: 'http://localhost:9778'
+    development:
+      templateData:
+        site:
+          url: 'http://localhost:9778'
 
 }
 

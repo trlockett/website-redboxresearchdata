@@ -1,5 +1,5 @@
 ---
-iconclass: "color1 fa-cloud"
+icon: checklist.png
 type: "indexrow"
 order: 1
 ---

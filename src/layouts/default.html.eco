@@ -7,9 +7,11 @@
 <html lang="en">
 	<head>
 		<title><%= @getPreparedTitle() %></title>
-		<%- @getBlock("meta").toHTML() %>
-		<%- @getBlock("scripts").add(["js/jquery.min.js" ,"js/skel.min.js","js/skel-layers.min.js","js/init.js","js/local.js"]).toHTML() %>
-  	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css"]).toHTML() %>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<%- @getBlock("scripts").add(["js/html5shiv.js", "js/jquery.min.js" ,"js/skel.min.js","js/skel-layers.min.js","js/init.js","js/local.js"]).toHTML() %>
+  	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xsmall.css","css/style-small.css","css/style-medium.css","css/style-large.css","css/style-xlarge.css"]).toHTML() %>
 	</head>
 	<body class="landing">
 		<!-- Header -->
@@ -28,11 +30,11 @@
 			</header>
 		<!-- Banner -->
 			<section id="banner">
-				<h2><%= @heading1 %></h2>
-				<p><%= @heading2 %></p>
-				<ul class="actions">
+				<h2><%= @getHeading1() %></h2>
+				<p><%= @getHeading2() %></p>
+				<ul>
 					<li>
-						<a href="#" class="image"><img src="images/RedBox_Logo_Text.png" alt="Redbox logo" width="200px" height="120px" /></a>
+						<a href="#" class="image special"><img src="images/RedBox_Logo.png" alt="Redbox logo" width="200px" height="120px" /></a>
 					</li>
 				</ul>
 			</section>
@@ -49,5 +51,28 @@
 					</div>
 				</div>
 			</section>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="container">
+								<div class="row">
+									<div class="8u 12u$(medium)">
+										<ul class="copyright">
+											<li>&copy; Untitled. All rights reserved.</li>
+											<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+											<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+										</ul>
+									</div>
+									<div class="4u$ 12u$(medium)">
+										<ul class="icons">
+											<li>
+												<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+
 	</body>
 </html>
