@@ -1,5 +1,5 @@
 ---
-iconclass: "color6 fa-rocket"
+iconclass: "colorrb fa-rocket"
 type: "rowcell"
 order: 3
 ---

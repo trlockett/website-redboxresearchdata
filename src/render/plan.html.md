@@ -1,6 +1,6 @@
 ---
 icon: checklist.png
-iconclass: "color6"
+iconclass: "colorrb"
 type: "rowcell"
 order: 1
 ---

@@ -1,5 +1,5 @@
 ---
-iconclass: "color9 fa-desktop"
+iconclass: "colorrb fa-laptop"
 type: "rowcell"
 order: 2
 ---

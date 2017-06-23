@@ -36,7 +36,7 @@
 	}
 
 	a {
-		color: #383b43;
+		color: #cc0000;
 		text-decoration: none;
 	}
 
@@ -502,6 +502,10 @@
 
 			.icon.rounded.color10 {
 				background-color: #61d43c;
+			}
+			
+			.icon.rounded.colorrb {
+				background-color: #cc0000;
 			}
 
 			.icon.rounded.fa-twitter {

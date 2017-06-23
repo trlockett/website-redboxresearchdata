@@ -11,7 +11,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<%- @getBlock("scripts").add(["js/jquery.min.js" ,"js/skel.min.js","js/skel-layers.min.js","js/init.js","js/local.js"]).toHTML() %>
-  	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css", "css/local.css"]).toHTML() %>
+  	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css", "css/local.css","css/redbox.css"]).toHTML() %>
 	</head>
 	<body class="landing">
 		<!-- Header -->
@@ -32,9 +32,9 @@
 			<section id="banner">
 				<h2><%= @getHeading1() %></h2>
 				<p><%= @getHeading2() %></p>
-				<ul>
+				<ul class="actions">
 					<li>
-						<a href="#" class="image special"><img src="images/RedBox_Logo.png" alt="Redbox logo" width="80px" height="100px" /></a>
+						<a href="#" class="image"><img src="images/RedBox_Logo_Box_Small.png" alt="Redbox logo" width="120px" height="120px" /></a>
 					</li>
 				</ul>
 			</section>
@@ -66,7 +66,7 @@
 									<div class="4u$ 12u$(medium)">
 										<ul class="icons">
 											<li>
-												<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+												<a href="https://twitter.com/researchdatabox" class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
 											</li>
 										</ul>
 									</div>

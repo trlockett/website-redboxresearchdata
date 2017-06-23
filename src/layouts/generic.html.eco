@@ -31,9 +31,8 @@
 			<div class="container">
 				<header class="major">
 					<h2><%= @getHeading1() %></h2>
-					<p><%= @getHeading1() %></p>
 				</header>
-				<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+				<!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
 				<%- @content %>
 			</div>
 		</section>
