@@ -1,7 +1,7 @@
 ---
 title: "Support"
 type: "page"
-order: 2
+order: 3
 heading1: "ReDBox Support" 
 heading2: "ReDBox"
 ---

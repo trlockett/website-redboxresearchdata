@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 type: "page"
-order: 3
+order: 5
 heading1: "Contact Us"
 heading2: "ReDBox"
 ---
