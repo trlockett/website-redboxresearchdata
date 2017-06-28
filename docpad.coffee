@@ -9,6 +9,18 @@ docpadConfig = {
       heading1: "ReDBox"
       heading2: "Research Data Box"
       url: 'https://redbox-mint.github.io/website-redboxresearchdata'
+      styles: [
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      ]
+      scripts: [
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      ]
+    getSiteStyles: ->
+      for style in @site.styles
+        return "<link rel=\"stylesheet\" type=\"text/css\" href=\"#{style}\">"
+    getSiteScripts: ->
+      for script in @site.scripts
+        return "<script defer=\"defer\" src=\"#{script}\"></script>"
     getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
     getHeading1: -> if @document.heading1 then @document.heading1 else @site.heading1
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
@@ -17,7 +29,7 @@ docpadConfig = {
   collections:
     pages: -> @getCollection("html").findAllLive({type:"page"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"generic"})
-    indexrow: -> @getCollection("html").findAllLive({type:"rowcell"},[{order:1}]).on "add", (model) ->
+    rowcells: -> @getCollection("html").findAllLive({type:"rowcell"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"box"})
   environments:
     development:

@@ -1,32 +1,4 @@
-<!DOCTYPE html>
-
-<!--
-	Transit by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html lang="en">
-<head>
-	<title><%= @getPreparedTitle() %></title>
-	<%- @getBlock("meta").toHTML() %>
-	<%- @getBlock("scripts").add(["js/jquery.min.js" ,"js/skel.min.js","js/skel-layers.min.js","js/init.js","js/local.js"]).toHTML() %>
-	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css","css/local.css"]).toHTML() %>
-</head>
-<body>
-	<!-- Header -->
-	<header id="header">
-		<nav id="nav">
-			<ul>
-				<% for page in @getCollection("pages").toJSON(): %>
-					<li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
-						<a href="<%= @getUrl(page) %>">
-							<%= page.title %>
-						</a>
-					</li>
-					<% end %>
-			</ul>
-		</nav>
-	</header>
+<%- @partial('header') %>
 	<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="container">
