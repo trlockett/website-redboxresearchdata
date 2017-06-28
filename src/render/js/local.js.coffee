@@ -1,2 +1,8 @@
 $(document).ready ->
-  $("#nav ul li.active").hide()
+  # $("#nav .dropdown .active").hide()
+  $('.panel').hover(
+    ()->
+      $(this).find(".panel-collapse").collapse('show')
+    () ->
+      $(this).find(".panel-collapse").collapse('hide')
+  )

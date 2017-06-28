@@ -17,14 +17,26 @@
 		<!-- Header -->
 			<header id="header">
 				<nav id="nav">
-					<ul>
-			      <% for page in @getCollection("pages").toJSON(): %>
-			          <li class="qcif-menu <%= if page.id is @document.id then 'active' else 'inactive' %>">
-			              <a href="<%= @getUrl(page) %>">
-			                  <%= page.title %>
+					<div class="dropdown dropdown-accordion" data-accordion="#accordion">
+			      <div class="panel-group" id="accordion">
+							<% for page in @getCollection("pages").toJSON(): %>
+			        <div class="panel panel-default qcif-menu <%= if page.id is @document.id then 'active' else 'inactive' %>">
+			          <div class="panel-heading">
+			            <h4 class="panel-title">
+			              <a href="<%= @getUrl(page) %>" data-target="#<%= page.title %>" data-toggle="collapse" data-parent="#accordion">
+				            	<%= page.title %>
 			              </a>
-			          </li>
-			      <% end %>
-			    </ul>
+			            </h4>
+			          </div>
+			          <div class="panel-collapse collapse">
+			            <div class="panel-body">
+			              <a href="#">Item a</a><br>
+			              <a href="#">Item b</a>
+			            </div>
+			          </div>
+			        </div>
+							<% end %>
+					  </div>
+					</div>
 				</nav>
 			</header>

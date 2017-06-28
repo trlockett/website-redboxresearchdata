@@ -1,5 +1,5 @@
 <%- @partial('header', {bodyclass:'landing'}) %>
-		<!-- Banner -->
+		 <!-- Banner -->
 			<section id="banner">
 				<h2><%= @getHeading1() %></h2>
 				<p><%= @getHeading2() %></p>
