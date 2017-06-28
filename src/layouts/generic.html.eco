@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--
 	Transit by TEMPLATED
 	templated.co @templatedco
@@ -9,7 +10,7 @@
 	<title><%= @getPreparedTitle() %></title>
 	<%- @getBlock("meta").toHTML() %>
 	<%- @getBlock("scripts").add(["js/jquery.min.js" ,"js/skel.min.js","js/skel-layers.min.js","js/init.js","js/local.js"]).toHTML() %>
-	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css"]).toHTML() %>
+	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css","css/local.css"]).toHTML() %>
 </head>
 <body>
 	<!-- Header -->
