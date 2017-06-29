@@ -7,6 +7,7 @@ div.box.alt
     position: absolute
     transform: translate(-50%, -50%)
     z-index: 10
+
 ul.copyright
   margin-top: 0 !important
   display: inline-block !important
@@ -25,11 +26,13 @@ div.qcif.image
 
 #navmenu-accordion
   .dropdown, .dropdown-menu, .panel-group, .panel, .panel-heading, .panel-collapse, .panel-body
-    background-color: transparent !important
+    background-color: transparent
   .panel
     vertical-align: top
     margin-top:5px
     border: none
+  .panel-heading
+    padding-left: 0 !important
   .panel-title
     vertical-align: middle !important
     padding-left: 10px
@@ -50,6 +53,13 @@ div.qcif.image
   #navmenu-accordion
     .panel
       display inline-block
+  body.generic
+    #navmenu-accordion
+      .panel-title
+      .panel-body
+      div a
+        background-color: #383b43 !important
+        color: #ffffff !important
 @media screen and (max-width: 979px)
   #navmenu-accordion
     .panel
