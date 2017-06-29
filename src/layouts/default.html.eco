@@ -1,4 +1,4 @@
-<%- @partial('header', {bodyclass:'landing'}) %>
+<%- @partial('page_top', {bodyclass:'landing'}) %>
 		 <!-- Banner -->
 			<section id="banner">
 				<h2><%= @getHeading1() %></h2>
@@ -22,30 +22,4 @@
 					</div>
 				</div>
 			</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="container qcif">
-						<div class="row qcif">
-							<div class="8u 12u$(medium)">
-									<ul class="copyright">
-										<li>&copy; 2017 Queensland Cyberinfrastructure Foundation. All rights reserved</li>
-										<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-										<li>Images: <a href="http://unsplash.com">Unsplash</a>,<a href="http://www.scienceimage.csiro.au">CSIRO</a>,<a href="https://thenounproject.com/">Noun project</a> and <a href="http://fontawesome.io/">Font Awesome</a></li>
-										<li>This project is managed and supported by the Queensland Cyber Infrastructure Foundation (QCIF)</li>
-									</ul>
-							</div>
-							<div class="foobar 4u$ 12u$(medium)">
-								<ul class="icons qcif">
-									<li class="qcif">
-										<a href="https://www.qcif.edu.au/" class="icon qcif"><img class="icon qcif" src="images/qcif_logo.png" alt="QCIF logo"/></a>
-									<li>
-										<a href="https://twitter.com/researchdatabox" class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</footer>
-	</body>
-</html>
+<%- @partial('page_bottom') %>

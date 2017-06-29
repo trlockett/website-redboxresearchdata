@@ -36,6 +36,9 @@ docpadConfig = {
       templateData:
         site:
           url: 'http://localhost:9778'
+  plugins:
+    consolidate:
+      eco: true
 
 }
 
