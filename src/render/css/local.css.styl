@@ -9,7 +9,7 @@ div.box.alt
     z-index: 10
 ul.copyright
   margin-top: 0 !important
-  display:
+  display: inline-block !important
   & li
     display: block !important
 ul.icons.qcif
@@ -22,23 +22,35 @@ div.qcif.image
     & img.icon.qcif
       max-width: 50%
       max-height: 50%
-.qcif-menu
-  font-weight: bold
 
-.dropdown, .dropdown-menu
-  background-color: transparent !important
-  border: none
-.panel-body, .panel-group, .panel, .panel-heading, .panel-collapse
-  background-color: transparent !important
-.panel
-  vertical-align: top
-  margin-top:5px
-.panel-title
-  vertical-align: middle !important
+#navmenu-accordion
+  .dropdown, .dropdown-menu, .panel-group, .panel, .panel-heading, .panel-collapse, .panel-body
+    background-color: transparent !important
+  .panel
+    vertical-align: top
+    margin-top:5px
+    border: none
+  .panel-title
+    vertical-align: middle !important
+    padding-left: 10px
+    padding-right: 10px
+    text-align: left
+    font-weight: bold
+  .panel-body
+    border-radius: 4px
+    border: 1px solid
+    div
+      line-height: 2em
+      padding-left: 10px
+      padding-right: 10px
+      text-align: left
+      font-weight: bold
 
 @media screen and (min-width: 980px)
-  .panel
-    display inline-block
+  #navmenu-accordion
+    .panel
+      display inline-block
 @media screen and (max-width: 979px)
-  .panel
-    display block
+  #navmenu-accordion
+    .panel
+      display block
