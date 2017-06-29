@@ -1,4 +1,4 @@
-<%- @partial('header') %>
+<%- @partial('page_top') %>
 	<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="container">
