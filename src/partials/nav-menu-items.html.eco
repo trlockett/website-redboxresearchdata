@@ -1,0 +1,9 @@
+<% if @menu?: %>
+  <div id="collapse<%= @menu.title %>" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="menuitem">
+          <%- @menu.contentRendered %>
+        </div>
+      </div>
+  </div>
+<% end %>

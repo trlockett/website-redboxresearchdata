@@ -1,22 +1,24 @@
 <header id="header">
   <nav id="nav">
-    <div class="dropdown dropdown-accordion" data-accordion="#navmenu-accordion">
-      <div class="panel-group" id="navmenu-accordion">
+    <div class="dropdown dropdown-accordion" data-accordion="#navmenus">
+      <div class="panel-group" id="navmenus">
         <% for page in @getCollection("pages").toJSON(): %>
         <div class="panel panel-default <%= if page.id is @document.id then 'active' else 'inactive' %>">
+          <% menu = @getMenu(page) %>
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a href="<%= @getUrl(page) %>" data-target="#<%= page.title %>" data-toggle="collapse" data-parent="#navmenu-accordion">
-                <%= page.title %>
-              </a>
+              <% if menu?: %>
+                <a href="javascript: void(0)" data-target="#<%= page.title %>" data-toggle="collapse" data-parent="#navmenus">
+                  <%= page.title %>
+                </a>
+              <% else: %>
+                <a href="<%= @getUrl(page) %>" data-target="#<%= page.title %>" data-toggle="collapse" data-parent="#navmenus">
+                  <%= page.title %>
+                </a>
+              <% end %>
             </h4>
           </div>
-          <div id="collapse<%= page.title %>" class="panel-collapse collapse">
-            <div class="panel-body">
-              <div><a href="#">Item a</a></div>
-              <div><a href="#">Item b</a></div>
-            </div>
-          </div>
+          <%- @partial('nav-menu-items', {menu: menu}) %>
         </div>
         <% end %>
       </div>

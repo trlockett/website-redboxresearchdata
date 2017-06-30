@@ -26,6 +26,8 @@ docpadConfig = {
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
     getUrl: (document) ->
       return @site.url + (document.url)
+    getMenu: (document) ->
+      return @getCollection("html").findAllLive({type:"menu", title:"#{document.title}"}).toJSON()[0]
   collections:
     pages: -> @getCollection("html").findAllLive({type:"page"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"generic"})

@@ -1,4 +1,4 @@
-<%- @partial('page_top', {bodyclass:'landing'}) %>
+<%- @partial('page-top', {bodyclass:'landing'}) %>
 		 <!-- Banner -->
 			<section id="banner">
 				<h2><%= @getHeading1() %></h2>
@@ -22,4 +22,4 @@
 					</div>
 				</div>
 			</section>
-<%- @partial('page_bottom') %>
+<%- @partial('page-bottom') %>
