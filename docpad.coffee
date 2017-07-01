@@ -9,12 +9,9 @@ docpadConfig = {
       heading1: "ReDBox"
       heading2: "Research Data Box"
       url: 'https://redbox-mint.github.io/website-redboxresearchdata'
-      styles: [
-        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      ]
-      scripts: [
-        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      ]
+      # for CDN
+      styles: []
+      scripts: []
     getSiteStyles: ->
       for style in @site.styles
         return "<link rel=\"stylesheet\" type=\"text/css\" href=\"#{style}\">"
