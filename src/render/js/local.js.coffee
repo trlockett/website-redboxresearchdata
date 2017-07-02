@@ -3,10 +3,7 @@ $(document).ready ->
   $('.panel').hover(
     ()->
       $(this).find('.panel-collapse').each(()->
-        # let menu overrun x-border so cascades evenly
-        $(this).css('width', '150%')
         $(this).collapse('show')
-        # )
       )
     () ->
       $(this).find('.panel-collapse').collapse('hide')

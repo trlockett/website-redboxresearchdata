@@ -33,7 +33,7 @@ div.qcif.image
     border: none
   .panel-heading
     text-align: left !important
-    margin: 5px 45px 10px 5px
+    margin: 5px 25px 10px 5px
     padding: 0
   .panel-title
     vertical-align: middle !important
@@ -45,13 +45,17 @@ div.qcif.image
     a
       text-decoration: none
   .panel-collapse
+    width: 170% !important
     margin: 0
+    -webkit-transition: height .15s ease-in-out
+    -o-transition: height .15s ease-in-out
+    transition: height .15s ease-in-out
     .panel-body
       padding-left: 5px
       padding-right: 0
-      margin-right: -50px
+      margin-right: -60px
       margin-left: 0
-      width: 8em !important
+      width: 8em
       border-radius: 4px
       border: solid 1px
       background-color: #000
@@ -63,6 +67,10 @@ div.qcif.image
         line-height: 2em
         text-align: left
         font-weight: bold
+
+#collapseDocumentation
+  .panel-body
+    width: 10em !important
 
 @media screen and (min-width: 980px)
   #navmenus
