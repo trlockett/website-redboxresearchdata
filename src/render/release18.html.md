@@ -1,8 +1,8 @@
 ---
 title: "1.8 Release Notes"
-type: "hiddenpage"
+layout: "generic"
 order: 1
-heading1: "Releases" 
+heading1: "Releases"
 heading2: "ReDBox"
 ---
 ## 1.8 - ReDBox - Mint
@@ -53,5 +53,3 @@ Process
 5. Overlay your changes from your new format institutional build
 6. Restart ReDBox and Mint
 7. Run the tf_restore.sh (tf_restore.bat in Windows) scripts to migrate the data
-
-  

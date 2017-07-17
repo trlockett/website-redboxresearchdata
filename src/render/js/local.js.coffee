@@ -1,5 +1,5 @@
 $(document).ready ->
-  $('#nav .dropdown .active').hide()
+  $('#nav .dropdown .active.hasNoMenus').hide()
   $('.panel').hover(
     ()->
       $(this).find('.panel-collapse').each(()->

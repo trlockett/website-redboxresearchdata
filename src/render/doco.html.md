@@ -1,8 +1,8 @@
 ---
 title: "Documentation"
-type: "page"
+type: "navigablePage"
 order: 3
-heading1: "ReDBox Documentation" 
+heading1: "ReDBox Documentation"
 heading2: "ReDBox"
 ---
 

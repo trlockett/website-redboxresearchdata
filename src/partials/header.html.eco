@@ -2,20 +2,15 @@
   <nav id="nav">
     <div class="dropdown dropdown-accordion" data-accordion="#navmenus">
       <div class="panel-group" id="navmenus">
-        <% for page in @getCollection("pages").toJSON(): %>
-        <div class="panel panel-default <%= if page.id is @document.id then 'active' else 'inactive' %>">
-          <% menu = @getMenu(page) %>
+        <!-- <% menus = @getCollection("menus").toJSON() %> -->
+        <% for page in @getCollection("navigablePages").toJSON(): %>
+        <% menu = @getMenus(page) %>
+        <div class="panel panel-default <%= if page.id is @document.id then 'active' else 'inactive' %> <%= if menu? then 'hasMenus' else 'hasNoMenus' %>">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <% if menu?: %>
-                <a href="javascript: void(0)" data-target="#<%= page.title %>" data-toggle="collapse" data-parent="#navmenus">
-                  <%= page.title %>
-                </a>
-              <% else: %>
-                <a href="<%= @getUrl(page) %>" data-target="#<%= page.title %>" data-toggle="collapse" data-parent="#navmenus">
-                  <%= page.title %>
-                </a>
-              <% end %>
+              <a href="<%= if menu? then menu.url else @getUrl(page) %>" data-target="<%= page.title %>" data-toggle="collapse" data-parent="#navmenus">
+                <%= page.title %>
+              </a>
             </h4>
           </div>
           <%- @partial('nav-menu-items', {menu: menu}) %>

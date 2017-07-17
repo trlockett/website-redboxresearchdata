@@ -23,10 +23,13 @@ docpadConfig = {
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
     getUrl: (document) ->
       return @site.url + (document.url)
-    getMenu: (document) ->
-      return @getCollection("html").findAllLive({type:"menu", title:"#{document.title}"}).toJSON()[0]
+    getMenus: (document) ->
+      menu = @getCollection("html").findAllLive({type:"menu", title: "#{document.title}"}).toJSON()[0]
+      if menu
+        menu.url = if menu.firstUrl then menu.firstUrl else document.url
+        return menu
   collections:
-    pages: -> @getCollection("html").findAllLive({type:"page"},[{order:1}]).on "add", (model) ->
+    navigablePages: -> @getCollection("html").findAllLive({type:"navigablePage"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"generic"})
     rowcells: -> @getCollection("html").findAllLive({type:"rowcell"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"box"})

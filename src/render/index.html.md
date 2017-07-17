@@ -1,6 +1,6 @@
 ---
 title: "Home"
-type: "page"
+type: "navigablePage"
 layout: "default"
 order: 0
 ---
