@@ -44,8 +44,8 @@ The 1.8 version of ReDBox has introduced changes to how the application is deplo
 
 Before upgrading, you will need to convert your existing institutional build to the new format. Please read the [documentation](https://github.com/redbox-mint-contrib/rb-sample-1.8-institutional-build/blob/master/README.md) for more information on how to upgrade.
 
-Process
-=======
+### Process
+
 1. Download the application tarballs (ReDBox and Mint)
 2. Shutdown ReDBox and Mint.&nbsp;
 3. Remove the server/lib and server/plugin directories of ReDBox and Mint

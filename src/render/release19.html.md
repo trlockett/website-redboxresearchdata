@@ -22,8 +22,8 @@ See the [Downloads](./download.html) page.
 
 New to the upgrade process in 1.9 is the inclusion of an upgrade script (tf_upgrade) to check the configuration of the application and to optionally enable new features. Note that if you are currently running version 1.6.2 or lower, you must first upgrade to 1.8. Please see here for instructions.
 
-Process
-=======
+#### Process
+
 1. Download the application tarballs (ReDBox and Mint)
 2. Shutdown ReDBox and Mint.
 3. Remove the server/lib and server/plugin directories of ReDBox and Mint
@@ -33,7 +33,7 @@ Process
 7. Restart ReDBox and Mint
 8. Run the tf_restore.sh (tf_restore.bat in Windows) scripts to migrate the data (This script only needs to be run in ReDBox as there are no schema changes to Mint)
 
-### 1.9 Upgrade Script
+#### 1.9 Upgrade Script
 This page is to walk through the execution of the upgrade script, explaining what it does at each step and providing information (links to other documentation) that describes it in more detail.
 
 The server file, tf_upgrade.sh is an upgrade configuration script, run on the command-line, which runs through some basic Q and A for the user to answer about specific configurations for redbox or mint.
@@ -55,19 +55,20 @@ If the script is executed correctly, you should now see some command line prompt
 Redbox upgrade process
 
 Currently, the redbox upgrade configuration script will step through the following prompts:
-Verifies correct upgrade version
-================================
+
+#### Verifies correct upgrade version
+
 * The script checks that the server library version matches the version named in the upgrade script (e.g, redbox-1.9-SNAPSHOT.pom).
 * If there is no match, the script will display a message that the library version is incorrect and the script will exit.
 * The script will also prompt to upgrade the version recorded by the server - ensure this is also matched.
 
-Checks if changes have been made to the dataset configuration templates
-=======================================================================
+#### Checks if changes have been made to the dataset configuration templates
+
 * If so, no updates are made to the configuration, with a simple message that these should be reviewed.
 * If not, the upgrade script proceeds to update the configuration, which currently checks:
 
-Curation relations which should be excluded
-===========================================
+#### Curation relations which should be excluded
+
 * See [Curation exclude conditions](./curation-configuration) for details of the new configuration
 * Previously, identifiers could only be excluded individually. From the 1.9 upgrade, redbox can now also exclude all relations except for that identifer which is nominated.
 * The script steps here are:
@@ -75,12 +76,12 @@ Curation relations which should be excluded
    * The user is prompted for the mint identifier prefix
    * The exclusion conditions identified are replaced such that any identifier that doesn't start with the mint identifier prefix are excluded from curation. In this way, redbox will ignore other parties/groups identifiers such as NLA and ORCID, during curation.
 
-Record as location
-==================
+#### Record as location
+
 * The user can choose to have a record's URL included as a rif-cs location, using the template named in the upgrade script (e.g, ${urlBase}published/detail/${oid} ). See [recordAsLocationDefault](/documentation/system-administration/administering-redbox/form-fields/collection-form-fields) collection form field.
 
-Configure the new rifcs transformer
-===================================
+#### Configure the new rifcs transformer
+
 * The user can choose to write the rifcs records using:
     * the existing velocity template  (see Metadata templates ), or
     * the new groovy script (see Rifcs scripting transformer)
@@ -88,23 +89,25 @@ Configure the new rifcs transformer
 * The script will also enable harvest remapping on restore, to ensure that the rifcs transformer is applied when running the restore/migration process, following this upgrade script.
 
 *** Note: At the 1.9 release, both the rifcs velocity template and the rifcs groovy script are compatible with rif-cs version 1.6.1. However, in the future (TBA), the rifcs velocity template will become deprecated, with revisions made only to the groovy script. ***
-Create the api user configuration
-=================================
+
+#### Create the api user configuration
+
 * If it doesn't already exist, the upgrade process adds empty api keys config, for user to add their api keys later. [Link to be provided.](./)
 
-Exit
-====
+#### Exit
+
 * Exits with message showing the location of the previous configuration backup (e.g., <fascinator-home>/pre-upgrade-backup) for rollback purposes if needed.
 
-## Mint upgrade process
+### Mint upgrade process
 Currently, the mint upgrade configuration script will step through the following prompts:
-Verifies correct upgrade version
-================================
+
+#### Verify correct upgrade version
+
 * The script checks that the server library version matches the version named in the upgrade script (e.g, redbox-1.9-SNAPSHOT.pom).
 * If there is no match, the script will display a message that the library version is incorrect and the script will exit.
 * The script will also prompt to upgrade the version recorded by the server - ensure this is also matched.
 
-## Technical Details
+### Technical Details
 It is not necessary to understand the high-level technical detail by which the upgrade process runs. It is provided here merely as a quick technical reference for those who wish to modify the upgrade according to their institutional requirements.
 * In running the upgrade, in a similar manner to tf_restore.sh. That is, the tf_upgrade.sh does not execute any upgrade logic directly, but rather looks for (on the java classpath) and executes the fascinator java class, UpgradeClient.class. To find this class, the script must be executed within the redbox installation server folder in order to find the correct class within server/lib.
 * The UpgradeClient class then binds itself (for use of any utility methods) to a groovy script, upgrade.groovy. It is this groovy script that contains the explicit upgrade instructions and can be found under home/upgrade/upgrade.groovy
@@ -112,7 +115,7 @@ It is not necessary to understand the high-level technical detail by which the u
 * For those new to working with groovy, check the redbox installation version number of the groovy-all  java archive and find the correct groovy version documentation [here](http://www.groovy-lang.org/documentation.html).
 
 
-## Troubleshooting
+### Troubleshooting
 * I get an error message : `Could not find or load main class com.googlecode.fascinator.UpgradeClient`
     * Usually this means you are not executing the script from your redbox installation's server folder. You must change into this folder, in order for the shell script to find the correct class under the  server/libfolder.
 * I execute the upgrade script OK, but on running the tf_restore.sh, it doesn't seem like the upgrade changes have been applied.

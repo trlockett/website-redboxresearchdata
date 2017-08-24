@@ -38,8 +38,6 @@ ReDBox Lite is a simplified metadata management version of ReDBox.  It supports 
 
 QCIF offers ReDBox Lite as a fully hosted Managed Service, providing a cost effective, fuss free alternative to installing and maintaining your own infrastructure. We can host ReDBox Lite on our [QRIScloud infrastructure](https://www.qriscloud.org.au) or on public cloud infrastructure.
 
-### ReDBox DLC
-In collaboration with Research Data Services (RDS) QCIF provides the ReDBox DLC service to support the Research Data Life Cycle Framework (DLCF). The DLCF is an Australian initiative designed to assist researchers in connecting their research activities with their research data as well as the eResearch infrastructure and services used to store, manage and process the data. QCIF Engineering Services is collaborating with RDS to create a portal available to all researchers to register their research activities. The portal will provide a Research Activity ID (RAID) which is used as a universal identifier for linking researchers, research activities and research data. This function is also being embedded in the ReDBox platform, allowing researchers to generate RAIDs at the RDMP stage and apply RAIDs to their data collections.
 ## Mint
 The Mint is a name-authority and vocabulary service that complements ReDBox.
 

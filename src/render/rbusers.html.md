@@ -21,5 +21,8 @@ ReDBox is a tool for managing data catalogues within and across government agenc
  * [Research Footprints](https://research-data.deakin.edu.au/footprints) at Deakin University, Victoria, Australia
 
  * [Stash](https://stash.research.uts.edu.au/) at University of Technology Sydney, NSW, Australia
+### ReDBox Community Users and Supporters
+ReDBox is supported by a strong community of Australian universities and institutions, including:
 
+![Our Community](./images/logos.png)
 
