@@ -11,16 +11,14 @@ ReDBox is one of the most popular research data management tools in Australia. I
 
 The [Queensland Cyber Infrastructure Foundation](http://www.qcif.edu.au) (QCIF) leads the ReDBox development initiative and provides several services including a support subscription service to institutions.
 
-ReDBox features include:
-========================
+### ReDBox features include:
 * Solutions for managing, describing and sharing research data collections
 * Easy to use workflow and data entry forms
 * Administrators can create a variety of metadata formats
 * OAI-PMH feeds your collection metadata to various aggregators
 * Built on an extensible plug-in model that integrate ReDBox within your organisational infrastructure
 
-ReDBox benefits include:
-========================
+### ReDBox benefits include:
 * An established solution fully backed by the optional ReDBox Support Agreement.
 * Vibrant and active community of users.
 * Fully customisable.
