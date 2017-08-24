@@ -1,7 +1,7 @@
 ---
 title: "Support"
 type: "navigablePage"
-order: 3
+order: 5
 heading1: "ReDBox Support"
 heading2: "ReDBox"
 ---
@@ -31,3 +31,7 @@ Community support is available through:
 
 ### Contact Us
  If you would like to discuss ReDBox, our support options or our project services please contact us via our [Contact Page](./contact.html) or email us at [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au).
+
+ ![ReDBox OR2017 Workshop](./images/or2017_workshop.jpg)
+ 
+ *Andy White from the ReDBox team hosts the ReDBox workshop at Open Repositories 2017*

@@ -1,7 +1,7 @@
 ---
 title: "Download"
 type: "navigablePage"
-order: 2
+order: 3
 heading1: "ReDBox Downloads"
 heading2: "ReDBox"
 ---

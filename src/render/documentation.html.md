@@ -1,7 +1,7 @@
 ---
 title: "Documentation"
 type: "navigablePage"
-order: 3
+order: 4
 heading1: "ReDBox Documentation"
 heading2: "ReDBox"
 ---
