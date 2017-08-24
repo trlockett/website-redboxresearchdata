@@ -21,6 +21,8 @@ Community support is available through:
   * Access to QCIF's online support system through which to lodge support requests
   * An invitation to the annual ReDBox User Group meeting to preview new releases as well as discuss and agree a priority list of ReDBox features and enhancements for future development.
   * An invitation to the client's technical staff to a subsequent Technical User Group meeting in which QCIF will guide technical staff in new and future technical procedures.
+** By subscribing to our support agreement your annual fee funds ReDBox support and keeps ReDBox at the forefront of research data management technologies **
+Please email us at [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au) and we will send through our support agreement for your consideration.
 
 ### Project Services
  Behind ReDBox development is QCIF Engineering Services, a team of Software Engineering professionals who provide a comprehensive range of software development and integration services to ReDBox clients, QCIF’s member universities, national research institutions, government and industry.
@@ -32,6 +34,3 @@ Community support is available through:
 ### Contact Us
  If you would like to discuss ReDBox, our support options or our project services please contact us via our [Contact Page](./contact.html) or email us at [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au).
 
- ![ReDBox OR2017 Workshop](./images/or2017_workshop.jpg)
- 
- *Andy White from the ReDBox team hosts the ReDBox workshop at Open Repositories 2017*
