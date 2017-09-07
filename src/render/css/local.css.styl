@@ -27,6 +27,9 @@ div.qcif.image
       max-width: 50%
       max-height: 50%
 
+menuLinkColor = rgba(255, 255, 255, 0.5)
+menuLinkHoverColor = #fff
+
 #navmenus
   .dropdown, .dropdown-menu, .panel-group, .panel, .panel-heading, .panel-collapse, .panel-body
     background-color: transparent
@@ -47,6 +50,9 @@ div.qcif.image
     font-weight: bold
     a
       text-decoration: none
+      color: menuLinkColor
+      &:hover
+        color: menuLinkHoverColor
   .panel-collapse
     width: 170% !important
     margin: 0
@@ -98,8 +104,8 @@ div.qcif.image
         color: #ffffff !important
       .panel-title
       .menuitem a
+        @extend #navmenus .panel-title a
         background-color: #383b43 !important
-        color: #ffffff !important
 @media screen and (max-width: 979px)
   #navmenus
     .panel
