@@ -26,7 +26,7 @@ docpadConfig = {
     getMenus: (document) ->
       menu = @getCollection("html").findAllLive({type:"menu", title: "#{document.title}"}).toJSON()[0]
       if menu
-        menu.url = if menu.firstUrl then menu.firstUrl else document.url
+        menu.url = if menu.firstUrl then menu.firstUrl else @getUrl(document)
         return menu
   collections:
     navigablePages: -> @getCollection("html").findAllLive({type:"navigablePage"},[{order:1}]).on "add", (model) ->
