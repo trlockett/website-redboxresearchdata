@@ -1,7 +1,9 @@
 ---
-iconclass: "colorrb fa-laptop"
-type: "rowcell"
-order: 2
+title: "Create"
+layout: "generic"
+heading1: "Create ReDBox"
+heading2: "ReDBox"
+type: "rowcellPage"
 ---
 ### Create
-Create your research data collection and manage it with ReDBox.
+Some stuff about...

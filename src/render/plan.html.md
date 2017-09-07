@@ -1,8 +1,9 @@
 ---
-icon: checklist.png
-iconclass: "colorrb"
-type: "rowcell"
-order: 1
+title: "Plan"
+layout: "generic"
+heading1: "Plan ReDBox"
+heading2: "ReDBox"
+type: "rowcellPage"
 ---
 ### Plan
-Plan your data management with ReDBox DMP tool and ReDBox DLC
+Some stuff about...

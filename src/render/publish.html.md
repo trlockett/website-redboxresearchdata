@@ -1,7 +1,9 @@
 ---
-iconclass: "colorrb fa-rocket"
-type: "rowcell"
-order: 3
+title: "Publish"
+layout: "generic"
+heading1: "Who Uses ReDBox?"
+heading2: "ReDBox"
+type: "rowcellPage"
 ---
 ### Publish
-Publish your metadata and data to international repositories.
+Some stuff about...
