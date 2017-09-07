@@ -6,6 +6,7 @@
 -->
 <html lang="en">
 	<head>
+
 		<title><%= @getPreparedTitle() %></title>
 		<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,3 @@
 		<%- @getBlock("scripts").add(["js/jquery.min.js","js/skel.min.js","js/skel-layers.min.js","js/init.js","js/local.js", "js/bootstrap.min.js"]).toHTML() %>
   	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css", "css/local.css", "css/bootstrap.min.css", "css/bootstrap.css.map"]).toHTML() %>
 	</head>
-	<body class="<%= @bodyclass %>">
-		<!-- Header -->
-	<%- @partial('header') %>

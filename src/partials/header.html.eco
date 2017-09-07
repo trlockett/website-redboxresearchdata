@@ -1,7 +1,7 @@
 <header id="header">
-  <nav id="nav">
-    <div class="dropdown dropdown-accordion" data-accordion="#navmenus">
-      <div class="panel-group" id="navmenus">
+  <nav class="navbar" id="nav">
+    <div class="dropdown dropdown-accordion container-fluid" data-accordion="#navmenus">
+      <div class="nav navbar-nav navbar-right panel-group" id="navmenus">
         <% for page in @getCollection("navigablePages").toJSON(): %>
         <% menu = @getMenus(page) %>
         <div class="panel panel-default <%= if page.id is @document.id then 'active' else 'inactive' %> <%= if menu? then 'hasMenus' else 'hasNoMenus' %>">

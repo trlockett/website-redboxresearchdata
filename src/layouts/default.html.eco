@@ -1,15 +1,15 @@
-<%- @partial('page-top', {bodyclass:'landing'}) %>
-		 <!-- Banner -->
+<%- @partial('page-top') %>
+<body class="landing">
+	<%- @partial('header') %>
 			<section id="banner">
 				<h2><%= @getHeading1() %></h2>
 				<p><%= @getHeading2() %></p>
 				<ul class="actions">
-					<li>
-						<a href="#" class="image"><img src="images/RedBox_Logo_Box_Small.png" alt="Redbox logo" width="120px" height="120px" /></a>
-					</li>
+				  <li>
+				  	<%- @partial('logo') %>
+				  </li>
 				</ul>
 			</section>
-		<!-- One -->
 			<section id="one" class="wrapper style1 special">
 				<div class="container">
 					<header class="major">

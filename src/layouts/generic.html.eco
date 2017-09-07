@@ -1,13 +1,16 @@
-<%- @partial('page-top', {bodyclass:'generic'}) %>
-	<!-- Main -->
-		<section id="main" class="wrapper">
-			<div class="container">
-				<header class="major">
-					<h2><%= @getHeading1() %></h2>
-				</header>
-				<!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
-				<%- @content %>
-			</div>
-		</section>
+<%- @partial('page-top') %>
+<body class="generic">
+	<div class="navbar-header logo">
+		<%- @partial('logo') %>
+	</div>
+<%- @partial('header') %>
+	<section id="main" class="wrapper">
+		<div class="container">
+			<header class="major">
+				<h2><%= @getHeading1() %></h2>
+			</header>
+			<%- @content %>
+		</div>
+	</section>
 </body>
 </html>
