@@ -1,5 +1,7 @@
 $(document).ready ->
+  # $('#nav .dropdown').on('click')
   $('#nav .dropdown .active.hasNoMenus').hide()
+  $('#nav .dropdown .active .panel-heading a:first').removeAttr('href')
   $('.panel').hover(
     ()->
       $(this).find('.panel-collapse').each(()->
