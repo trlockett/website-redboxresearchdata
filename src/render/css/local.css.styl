@@ -76,7 +76,8 @@ menuLinkHoverColor = #fff
         line-height: 2em
         text-align: left
         font-weight: bold
-
+        a
+          @extend #navmenus .panel-title a
 #nav
   width 100%
 
@@ -103,9 +104,10 @@ menuLinkHoverColor = #fff
         background-color: #383b43 !important
         color: #ffffff !important
       .panel-title
-      .menuitem a
+      .menuitem p a
         @extend #navmenus .panel-title a
         background-color: #383b43 !important
+
 @media screen and (max-width: 979px)
   #navmenus
     .panel
