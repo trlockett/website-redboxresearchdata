@@ -1,13 +1,11 @@
-<div class="4u 12u$(medium)">
-  <section class="box">
-    <div class="box alt" style="position:relative; ">
-        <% if @document.iconclass: %>
-          <i class="icon big rounded underlay <%= @document.iconclass %>"></i>
-        <% end %>
-        <% if @document.icon: %>
-          <img class="overlay" src="images/<%= @document.icon %>" alt="@document.icon" width="80px" height="70px"/>
-        <% end %>
-    </div>
-    <%- @content %>
-  </section>
-</div>
+<section class="box">
+  <div class="box alt" style="position:relative; ">
+      <% if @document.iconclass: %>
+        <i class="icon big rounded underlay <%= @document.iconclass %>"></i>
+      <% end %>
+      <% if @document.icon: %>
+        <img class="overlay" src="images/<%= @document.icon %>" alt="@document.icon" width="80px" height="70px"/>
+      <% end %>
+  </div>
+  <%- @content %>
+</section>

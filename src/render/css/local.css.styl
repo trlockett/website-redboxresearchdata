@@ -93,6 +93,19 @@ menuLinkHoverColor = #fff
   .panel-body
     width: 10em !important
 
+&:hover
+  text-decoration: none !important
+
+shadow = 1px 1px 5px #999
+
+#one .row a
+  color #000
+  &:hover section.box
+    border solid 1px #CCC
+    -moz-box-shadow shadow
+    -webkit-box-shadow shadow
+    box-shadow shadow
+
 @media screen and (min-width: 980px)
   #navmenus
     .panel

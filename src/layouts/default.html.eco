@@ -17,7 +17,11 @@
 					</header>
 					<div class="row 150%">
 						<% for document in @getCollection("rowcells").toJSON(): %>
-			          <%- document.contentRendered %>
+							<div class="4u 12u$(medium)">
+								<a href="<%- @getBoxUrl(document.title) %>">
+		          		<%- document.contentRendered %>
+								</a>
+							</div>
 			      <% end %>
 					</div>
 				</div>

@@ -23,6 +23,9 @@ docpadConfig = {
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
     getUrl: (document) ->
       return @site.url + (document.url)
+    getBoxUrl: (title) ->
+      boxPage = @getCollection("html").findAllLive({type:"rowcellPage", title: "#{title}"}).toJSON()[0]
+      return @site.url + boxPage.url
     getMenus: (document) ->
       menu = @getCollection("html").findAllLive({type:"menu", title: "#{document.title}"}).toJSON()[0]
       if menu
