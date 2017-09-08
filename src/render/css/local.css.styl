@@ -29,6 +29,9 @@ div.qcif.image
 
 menuLinkColor = rgba(255, 255, 255, 0.5)
 menuLinkHoverColor = #fff
+collapsedMenuLinkColor = #6a6b6d
+collapsedMenuLinkHoverColor = #000
+collapsedMenuItemLinkHoverColor = #fff
 
 #navmenus
   .dropdown, .dropdown-menu, .panel-group, .panel, .panel-heading, .panel-collapse, .panel-body
@@ -50,9 +53,14 @@ menuLinkHoverColor = #fff
     font-weight: bold
     a
       text-decoration: none
-      color: menuLinkColor
-      &:hover
-        color: menuLinkHoverColor
+      @media screen and (min-width: 980px)
+        color: menuLinkColor
+        &:hover
+          color: menuLinkHoverColor
+      @media screen and (max-width: 979px)
+        color collapsedMenuLinkColor
+        &:hover
+          color collapsedMenuLinkHoverColor
   .panel-collapse
     width: 170% !important
     margin: 0
@@ -78,6 +86,9 @@ menuLinkHoverColor = #fff
         font-weight: bold
         a
           @extend #navmenus .panel-title a
+          @media screen and (max-width: 979px)
+            &:hover
+              color collapsedMenuItemLinkHoverColor
 #nav
   width 100%
 
