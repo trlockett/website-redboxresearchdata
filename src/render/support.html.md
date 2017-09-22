@@ -13,7 +13,7 @@ heading2: "ReDBox"
 
 Community support is available through:
  * [Our mailing list](https://groups.google.com/forum/#!forum/redbox-repo)
- * [Documentation on this site](http://www.redboxresearchdata.com.au/documentation)
+ * [Documentation on this site](http://docs.redboxresearchdata.com.au/documentation)
 
 ### QCIF Support Agreements
  QCIF provides support to institutions and organisations who implement ReDBox or utilises ReDBox Lite through an annual support arrangement. For a small annual fee QCIF will provide:

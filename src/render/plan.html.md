@@ -13,6 +13,6 @@ The ReDBox Research Data Management Plan (RDMP) tool is integrated into the core
 
 As discussed in [ReDBox DLC](rbdlc.html) RAiDs are now supported in the DMP Tool in ReDBox 1.9, allowing users to add existing RAiDs to a data management plan or mint new RAiDs. In ReDBox 2.0 the RAiD will be a key identifier to tie together the data management plan, the provisioned storage and the published data collection.
 
-Also with ReDBox 2.0 QCIF are using a new web development framework that will allow QCIF to move beyond hosting individual ReDBox Lite instances to providing the full ReDBox functionality in the Cloud using the Software as a Service (SaaS) model. The [Research Activity Portal](www.raportal.org.au) can already be extended to provide the Data Management Planning Tool for institutions.
+Also with ReDBox 2.0 QCIF are using a new web development framework that will allow QCIF to move beyond hosting individual ReDBox Lite instances to providing the full ReDBox functionality in the Cloud using the Software as a Service (SaaS) model. The [Research Activity Portal](https://www.raportal.org.au) can already be extended to provide the Data Management Planning Tool for institutions.
 
 Get in touch with the ReDBox team to find out how easily our RDMP tool can be adapted to the needs of your institution. Email us at [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au)
