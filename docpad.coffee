@@ -8,7 +8,7 @@ docpadConfig = {
       title: "ReDBox: Research Data Box"
       heading1: "ReDBox"
       heading2: "Research Data Box"
-      url: 'https://redbox-mint.github.io/website-redboxresearchdata'
+      url: 'http://www.redboxresearchdata.com.au'
       # for CDN
       styles: []
       scripts: []
