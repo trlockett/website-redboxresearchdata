@@ -44,6 +44,8 @@ docpadConfig = {
   plugins:
     consolidate:
       eco: true
+    cleanurls:
+      enabled: true
 
 }
 
