@@ -44,10 +44,6 @@ docpadConfig = {
   plugins:
     consolidate:
       eco: true
-    # cleanurls:
-    #   advancedRedirects: [
-    #     [/^\/redbox-mint\.github\.io\/?(.+)\.html$/, 'https://redbox-mint.github.io/website-redboxresearchdata/$1']
-    #   ]
 }
 # Export the DocPad Configuration
 module.exports = docpadConfig
