@@ -45,7 +45,7 @@ docpadConfig = {
     consolidate:
       eco: true
     cleanurls:
-      enabled: true
+      static: true
 
 }
 
