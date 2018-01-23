@@ -12,7 +12,8 @@
     "docpad-plugin-livereload": "~2.9.0",
     "docpad-plugin-marked": "~2.4.0",
     "docpad-plugin-partials": "~2.11.0",
-    "docpad-plugin-stylus": "~2.13.0"
+    "docpad-plugin-stylus": "~2.13.0",
+    "marked": "^0.3.12"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
