@@ -6,7 +6,6 @@
   "description": "Docs for Redboxresearchdata",
   "dependencies": {
     "docpad": "~6.79.4",
-    "docpad-plugin-cleanurls": "~2.10.0",
     "docpad-plugin-coffeescript": "~2.6.0",
     "docpad-plugin-eco": "~2.2.1",
     "docpad-plugin-livereload": "~2.9.0",
