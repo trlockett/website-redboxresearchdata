@@ -31,6 +31,21 @@ docpadConfig = {
       if menu
         menu.url = if menu.firstUrl then menu.firstUrl else @getUrl(document)
         return menu
+    getCleanUrls: (document) ->
+        url = @site.url + document
+        return """
+  				<!DOCTYPE html>
+  				<html>
+  					<head>
+  						<title>#{url or 'Redirect'}</title>
+  						<meta http-equiv="REFRESH" content="0;url=#{url}">
+  						<link rel="canonical" href="#{url}" />
+  					</head>
+  					<body>
+  						This page has moved. You will be automatically redirected to its new location. If you aren't forwarded to the new page, <a href="#{url}">click here</a>.
+  					</body>
+  				</html>
+  				"""
   collections:
     navigablePages: -> @getCollection("html").findAllLive({type:"navigablePage"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"generic"})
@@ -44,6 +59,9 @@ docpadConfig = {
   plugins:
     consolidate:
       eco: true
+    cleanurls:
+      enabled: true
+      getRedirectTemplate: (doc) -> @docpad.getConfig().templateData.getCleanUrls(doc)
 }
 # Export the DocPad Configuration
 module.exports = docpadConfig
