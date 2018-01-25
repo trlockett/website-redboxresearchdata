@@ -33,7 +33,7 @@ docpadConfig = {
         menu.url = if menu.firstUrl then menu.firstUrl else @getUrl(document)
         return menu
     getCleanUrls: (document) ->
-        url = '/website-redboxresearchdata' + document
+        url = '/website-redboxresearchdata' + document + '/'
         title = document.split('/').join('')
         return """
   				<!DOCTYPE html>
@@ -62,6 +62,7 @@ docpadConfig = {
     consolidate:
       eco: true
     cleanurls:
+      trailingSlashes: true
       getRedirectTemplate: (doc) -> @docpad.getConfig().templateData.getCleanUrls(doc)
 }
 # Export the DocPad Configuration
