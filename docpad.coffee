@@ -10,14 +10,14 @@ docpadConfig = {
       heading2: "Research Data Box"
       url: 'https://redbox-mint.github.io/website-redboxresearchdata'
       # for CDN
-      styles: []
-      scripts: []
+      styles: ["skel.css","style.css","style-xlarge.css", "local.css", "bootstrap.min.css", "bootstrap.css.map"]
+      scripts: ["jquery.min.js","skel.min.js","skel-layers.min.js","init.js","local.js", "bootstrap.min.js"]
+    styleTemplate: (style)->"<link rel=\"stylesheet\" type=\"text/css\" href=\"#{@site.url}/css/#{style}\"/>"
+    scriptTemplate: (script)->"<script defer=\"defer\" src=\"#{@site.url}/js/#{script}\"></script>"
     getSiteStyles: ->
-      for style in @site.styles
-        return "<link rel=\"stylesheet\" type=\"text/css\" href=\"#{style}\">"
+      @styleTemplate style for style in @site.styles
     getSiteScripts: ->
-      for script in @site.scripts
-        return "<script defer=\"defer\" src=\"#{script}\"></script>"
+      @scriptTemplate script for script in @site.scripts
     getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
     getHeading1: -> if @document.heading1 then @document.heading1 else @site.heading1
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
