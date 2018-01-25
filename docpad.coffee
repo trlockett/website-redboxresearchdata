@@ -22,8 +22,8 @@ docpadConfig = {
     getHeading1: -> if @document.heading1 then @document.heading1 else @site.heading1
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
     getUrl: (document) ->
-      let updatedUrl = @site.url + (document.url)
-      return updatedUrl.split(".html")
+      updatedUrl = @site.url + document.url
+      return updatedUrl
     getBoxUrl: (title) ->
       boxPage = @getCollection("html").findAllLive({type:"rowcellPage", title: "#{title}"}).toJSON()[0]
       return @site.url + boxPage.url
@@ -33,12 +33,13 @@ docpadConfig = {
         menu.url = if menu.firstUrl then menu.firstUrl else @getUrl(document)
         return menu
     getCleanUrls: (document) ->
-        url = 'website-redboxresearchdata' + document
+        url = '/website-redboxresearchdata' + document + '/'
+        title = document.split('/').join('')
         return """
   				<!DOCTYPE html>
   				<html>
   					<head>
-  						<title>#{'Redirect'}</title>
+  						<title>#{title or 'Redirect'}</title>
   						<meta http-equiv="REFRESH" content="0;url=#{url}">
   						<link rel="canonical" href="#{url}" />
   					</head>
