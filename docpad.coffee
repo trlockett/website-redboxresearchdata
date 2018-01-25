@@ -22,7 +22,8 @@ docpadConfig = {
     getHeading1: -> if @document.heading1 then @document.heading1 else @site.heading1
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
     getUrl: (document) ->
-      return @site.url + (document.url)
+      let updatedUrl = @site.url + (document.url)
+      return updatedUrl.split(".html")
     getBoxUrl: (title) ->
       boxPage = @getCollection("html").findAllLive({type:"rowcellPage", title: "#{title}"}).toJSON()[0]
       return @site.url + boxPage.url
@@ -56,14 +57,10 @@ docpadConfig = {
       templateData:
         site:
           url: 'http://localhost:9778'
-      plugins:
-        cleanurls:
-          enabled: false
   plugins:
     consolidate:
       eco: true
     cleanurls:
-      enabled: true
       getRedirectTemplate: (doc) -> @docpad.getConfig().templateData.getCleanUrls(doc)
 }
 # Export the DocPad Configuration
