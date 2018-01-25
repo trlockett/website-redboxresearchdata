@@ -22,8 +22,7 @@ docpadConfig = {
     getHeading1: -> if @document.heading1 then @document.heading1 else @site.heading1
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
     getUrl: (document) ->
-      updatedUrl = @site.url + document.url
-      return updatedUrl
+      return @site.url + (document.url)
     getBoxUrl: (title) ->
       boxPage = @getCollection("html").findAllLive({type:"rowcellPage", title: "#{title}"}).toJSON()[0]
       return @site.url + boxPage.url
@@ -32,22 +31,6 @@ docpadConfig = {
       if menu
         menu.url = if menu.firstUrl then menu.firstUrl else @getUrl(document)
         return menu
-    getCleanUrls: (document) ->
-        url = '/website-redboxresearchdata' + document + '/'
-        title = document.split('/').join('')
-        return """
-  				<!DOCTYPE html>
-  				<html>
-  					<head>
-  						<title>#{title or 'Redirect'}</title>
-  						<meta http-equiv="REFRESH" content="0;url=#{url}">
-  						<link rel="canonical" href="#{url}" />
-  					</head>
-  					<body>
-  						This page has moved. You will be automatically redirected to its new location. If you aren't forwarded to the new page, <a href="#{url}">click here</a>.
-  					</body>
-  				</html>
-  				"""
   collections:
     navigablePages: -> @getCollection("html").findAllLive({type:"navigablePage"},[{order:1}]).on "add", (model) ->
       model.setMetaDefaults({layout:"generic"})
@@ -61,9 +44,6 @@ docpadConfig = {
   plugins:
     consolidate:
       eco: true
-    cleanurls:
-      trailingSlashes: true
-      getRedirectTemplate: (doc) -> @docpad.getConfig().templateData.getCleanUrls(doc)
 }
 # Export the DocPad Configuration
 module.exports = docpadConfig
