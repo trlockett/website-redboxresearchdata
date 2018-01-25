@@ -32,12 +32,12 @@ docpadConfig = {
         menu.url = if menu.firstUrl then menu.firstUrl else @getUrl(document)
         return menu
     getCleanUrls: (document) ->
-        url = @site.url + document
+        url = '/website-redboxresearchdata' + document
         return """
   				<!DOCTYPE html>
   				<html>
   					<head>
-  						<title>#{url or 'Redirect'}</title>
+  						<title>#{'Redirect'}</title>
   						<meta http-equiv="REFRESH" content="0;url=#{url}">
   						<link rel="canonical" href="#{url}" />
   					</head>
@@ -56,6 +56,9 @@ docpadConfig = {
       templateData:
         site:
           url: 'http://localhost:9778'
+      plugins:
+        cleanurls:
+          enabled: false
   plugins:
     consolidate:
       eco: true
