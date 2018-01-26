@@ -2,7 +2,7 @@ language: node_js
 before_script:
 - npm install
 script:
-- npm run test
+- npm run clean && npm run test
 after_success:
 - ./prepare_gh_deploy.sh
 deploy:

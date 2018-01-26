@@ -17,6 +17,8 @@
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
+    "clean": "docpad clean",
+    "dev": "node_modules/.bin/docpad run",
     "start": "node_modules/.bin/docpad-server",
     "test": "docpad generate --debug --silent --env static",
     "deploy": "docpad deploy-ghpages --silent --env static"
