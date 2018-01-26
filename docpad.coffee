@@ -65,7 +65,10 @@ docpadConfig = {
       trailingSlashes: true
       getRedirectTemplate: (doc) -> @docpad.getConfig().templateData.getCleanUrls(doc)
       advancedRedirects:[
-        [/^\/redbox-mint.github.io\/(css|fonts|images|js)\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/$1/$2']
+        [/^https:\/\/redbox-mint\.github\.io\/images\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/images/$1']
+        [/^https:\/\/redbox-mint\.github\.io\/css\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/css/$1']
+        [/^https:\/\/redbox-mint\.github\.io\/js\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/js/$1']
+        [/^https:\/\/redbox-mint\.github\.io\/fonts\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/fonts/$1']
       ]
 }
 # Export the DocPad Configuration
