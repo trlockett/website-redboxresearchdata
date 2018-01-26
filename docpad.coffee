@@ -10,20 +10,26 @@ docpadConfig = {
       heading2: "Research Data Box"
       url: 'https://redbox-mint.github.io/website-redboxresearchdata'
       # for CDN
-      styles: []
-      scripts: []
-    getSiteStyles: ->
-      for style in @site.styles
-        return "<link rel=\"stylesheet\" type=\"text/css\" href=\"#{style}\">"
-    getSiteScripts: ->
-      for script in @site.scripts
-        return "<script defer=\"defer\" src=\"#{script}\"></script>"
+      styles: ['skel.css','style.css','style-xlarge.css','local.css','bootstrap.min.css','bootstrap.css.map']
+      scripts: ['jquery.min.js','skel.min.js','skel-layers.min.js','init.js','local.js','bootstrap.min.js']
+    scriptTemplate: (script) -> "<script defer=\"defer\" src=\"#{@site.url}/js/#{script}\"></script>"
+    styleTemplate: (style) -> "<link rel=\"stylesheet\" type=\"text/css\" href=\"#{@site.url}/css/#{style}\">"
+    getSiteScripts: -> (@scriptTemplate script for script in @site.scripts).join("")
+    getSiteStyles: -> (@styleTemplate style for style in @site.styles).join("")
     getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
     getHeading1: -> if @document.heading1 then @document.heading1 else @site.heading1
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
     getUrl: (document) ->
       updatedUrl = @site.url + document.url
       return updatedUrl
+    imagesFrom: (name) -> @site.url + "/images/" + name
+    jsFrom: (name) -> @site.url + "/js/" + name
+    cssFrom: (name) -> @site.url + "/css/" + name
+    fontsFrom: (name) -> @site.url + "/fonts/" + name
+    images: () -> @site.url + "/images"
+    js: () -> @site.url + "/js"
+    css: () -> @site.url + "/css"
+    fonts: () -> @site.url + "/fonts"
     getBoxUrl: (title) ->
       boxPage = @getCollection("html").findAllLive({type:"rowcellPage", title: "#{title}"}).toJSON()[0]
       return @site.url + boxPage.url
@@ -58,15 +64,6 @@ docpadConfig = {
       templateData:
         site:
           url: 'http://localhost:9778'
-    static:
-      plugins:
-        cleanurls:
-            advancedRedirects:[
-              [/^https:\/\/redbox-mint\.github\.io\/images\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/images/$1']
-              [/^https:\/\/redbox-mint\.github\.io\/css\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/css/$1']
-              [/^https:\/\/redbox-mint\.github\.io\/js\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/js/$1']
-              [/^https:\/\/redbox-mint\.github\.io\/fonts\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/fonts/$1']
-            ]
   plugins:
     consolidate:
       eco: true

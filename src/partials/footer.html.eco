@@ -10,7 +10,7 @@
         </ul>
         <ul class="icons qcif image">
           <li>
-            <a href="https://www.qcif.edu.au/"><img class="icon qcif" src="/images/qcif_logo.png" alt="QCIF logo" /></a>
+            <a href="https://www.qcif.edu.au/"><img class="icon qcif" src="<%= @images() %>/qcif_logo.png" alt="QCIF logo" /></a>
           </li>
         </ul>
       </div>
