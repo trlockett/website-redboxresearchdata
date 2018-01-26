@@ -58,18 +58,21 @@ docpadConfig = {
       templateData:
         site:
           url: 'http://localhost:9778'
+    static:
+      plugins:
+        cleanurls:
+            advancedRedirects:[
+              [/^https:\/\/redbox-mint\.github\.io\/images\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/images/$1']
+              [/^https:\/\/redbox-mint\.github\.io\/css\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/css/$1']
+              [/^https:\/\/redbox-mint\.github\.io\/js\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/js/$1']
+              [/^https:\/\/redbox-mint\.github\.io\/fonts\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/fonts/$1']
+            ]
   plugins:
     consolidate:
       eco: true
     cleanurls:
       trailingSlashes: true
       getRedirectTemplate: (doc) -> @docpad.getConfig().templateData.getCleanUrls(doc)
-      advancedRedirects:[
-        [/^https:\/\/redbox-mint\.github\.io\/images\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/images/$1']
-        [/^https:\/\/redbox-mint\.github\.io\/css\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/css/$1']
-        [/^https:\/\/redbox-mint\.github\.io\/js\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/js/$1']
-        [/^https:\/\/redbox-mint\.github\.io\/fonts\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/fonts/$1']
-      ]
 }
 # Export the DocPad Configuration
 module.exports = docpadConfig
