@@ -63,13 +63,10 @@ docpadConfig = {
       eco: true
     cleanurls:
       trailingSlashes: true
-      simpleRedirects:
-        '/css': '/website-redboxresearchdata/css'
-        '/fonts': '/website-redboxresearchdata/fonts'
-        '/images': '/website-redboxresearchdata/images'
-        '/js': '/website-redboxresearchdata/js'
       getRedirectTemplate: (doc) -> @docpad.getConfig().templateData.getCleanUrls(doc)
-
+      advancedRedirects:[
+        [/^\/redbox-mint.github.io\/(css|fonts|images|js)\/(.*)$/, 'https://redbox-mint.github.io/website-redboxresearchdata/$1/$2']
+      ]
 }
 # Export the DocPad Configuration
 module.exports = docpadConfig
