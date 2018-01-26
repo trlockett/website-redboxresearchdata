@@ -25,22 +25,22 @@ Also during the conference, the team took the opportunity to hold a ReDBox Commu
 
 For more information about ReDBox, please email: [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au).
 
- ![ReDBox OR2017 Workshop](./images/or2017_workshop.jpg)
- 
+ ![ReDBox OR2017 Workshop](/images/or2017_workshop.jpg)
+
  *Andy White from the ReDBox team hosts the ReDBox workshop at Open Repositories 2017*
- 
+
 ### ReDBox version 1.9 released
 
-![ReDBox Logo](./images/RedBox_Logo_Text.png)
+![ReDBox Logo](/images/RedBox_Logo_Text.png)
 
 November 2016
- 
-QCIF is pleased to announce the release of version 1.9 of the ReDBox metadata management platform. 
+
+QCIF is pleased to announce the release of version 1.9 of the ReDBox metadata management platform.
 
 This release will support ORCIDs as researcher identifiers and will be compliant with the Australian National Data Service’s RIF-CS schema, version 1.6. RIF-CS (Registry Interchange Format— Collections and Services) was developed by ANDS as a data format for supporting the exchange of collection and service descriptions.
 
-"A key feature of ReDBox is that we keep it up to date with Australian research services and codes of practice,” said Andrew Brazzatti, support lead and technical architect for the ReDBox project. 
+"A key feature of ReDBox is that we keep it up to date with Australian research services and codes of practice,” said Andrew Brazzatti, support lead and technical architect for the ReDBox project.
 
-The release was introduced at the ReDBox User Group meeting in Brisbane on Wednesday, 17 November. QCIF holds these annual meetings by videoconference to keep the ReDBox community aware of new features and so its participants can help plan future releases. 
+The release was introduced at the ReDBox User Group meeting in Brisbane on Wednesday, 17 November. QCIF holds these annual meetings by videoconference to keep the ReDBox community aware of new features and so its participants can help plan future releases.
 
-If you would like to know more about ReDBox and QCIF's Engineering Services team, please email: [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au). 
+If you would like to know more about ReDBox and QCIF's Engineering Services team, please email: [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au).

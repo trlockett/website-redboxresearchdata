@@ -14,6 +14,6 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<%- @getBlock("scripts").add(["js/jquery.min.js","js/skel.min.js","js/skel-layers.min.js","js/init.js","js/local.js", "js/bootstrap.min.js"]).toHTML() %>
-  	<%- @getBlock("styles").add(["css/skel.css","css/style.css","css/style-xlarge.css", "css/local.css", "css/bootstrap.min.css", "css/bootstrap.css.map"]).toHTML() %>
+		<%- @getBlock("scripts").add(["/js/jquery.min.js","/js/skel.min.js","/js/skel-layers.min.js","/js/init.js","/js/local.js", "/js/bootstrap.min.js"]).toHTML() %>
+  	<%- @getBlock("styles").add(["/css/skel.css","/css/style.css","/css/style-xlarge.css", "/css/local.css", "/css/bootstrap.min.css", "/css/bootstrap.css.map"]).toHTML() %>
 	</head>
