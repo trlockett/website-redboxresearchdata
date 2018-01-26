@@ -1,0 +1,22 @@
+<%- @partial('page-top') %>
+<body class="generic">
+	<div class="navbar-header logo">
+		<%- @partial('logo') %>
+	</div>
+<%- @partial('header') %>
+	<section id="main" class="wrapper">
+		<div class="container">
+			<header class="major">
+				<h2><%= @getHeading1() %></h2>
+			</header>
+	    <h1>Not Found 😲</h1>
+	    <p>Sorry, but the page you were trying to view does not exist.</p>
+	    <p>It looks like this was the result of either:</p>
+	    <ul>
+	        <li>a mistyped address</li>
+	        <li>an out-of-date link</li>
+	    </ul>
+		</div>
+	</section>
+</body>
+</html>
