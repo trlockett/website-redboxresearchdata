@@ -16,7 +16,7 @@ The 1.9 release of ReDBox and Mint (1.4 Fascinator) introduces improvements in f
 6. New upgrade script to assist with the upgrade configuration process
 
 ### Downloads
-See the [Downloads](./download.html) page.
+See the [Downloads](<%= @getUrl("download.html") %>) page.
 ### Upgrading to 1.9
 *** Note *** While upgrading ReDBox and Mint, you may wish to consider your Java runtime environment to the latest version 8. While ReDBox 1.9 will run on previous versions of the JVM, upgrading the JRE will ensure full support of the platform and future versions of ReDBox may take advantage of the latest Java features.
 

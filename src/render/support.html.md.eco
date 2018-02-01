@@ -32,5 +32,4 @@ Please email us at [info@redboxresearchdata.com.au](mailto:info@redboxresearchda
  QCIF Engineering Services can rapidly scope and cost a client project. We utilise the Agile methodology to deliver project outcomes that meet expectations of quality, time and budget.
 
 ### Contact Us
- If you would like to discuss ReDBox, our support options or our project services please contact us via our [Contact Page](./contact.html) or email us at [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au).
-
+ If you would like to discuss ReDBox, our support options or our project services please contact us via our [Contact Page](<%= @getUrl("contact.html") %>) or email us at [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au).

@@ -19,5 +19,5 @@ Please follow links for information about [installation](http://www.redboxresear
 
 ### Release Notes
 Follow the links for release notes and upgrade notes.
-* [Release 1.9](./release19.html)
-* [Release 1.8](./release18.html) (These notes also apply to 1.7)
+* [Release 1.9](<%= @getUrl("release19.html") %>)
+* [Release 1.8](<%= @getUrl("release18.html") %>) (These notes also apply to 1.7)
