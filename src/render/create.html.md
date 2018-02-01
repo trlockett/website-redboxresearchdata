@@ -5,7 +5,7 @@ heading1: "Creating Data with ReDBox"
 heading2: "ReDBox"
 type: "rowcellPage"
 ---
-![Photo by chuttersnap on Unsplash](<%- @images() %>/chuttersnap-146799_web.jpg)
+![Photo by chuttersnap on Unsplash](images/chuttersnap-146799_web.jpg)
 
 ### Create
 Under the [ReDBox DLC Service](./rbdlc.html) research staff can access and acquire data infrastructure through Provisioning where they can create their data. Through Data Harvesting researchers can then directly manage the data they have created.

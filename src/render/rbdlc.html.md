@@ -8,7 +8,7 @@ heading2: "ReDBox"
 ### ReDBox DLC
 ReDBox DLC is the next step forward for ReDBox. With the help of supporters like Research Data Services (RDS) and the University of Technology Sydney (UTS), QCIF is creating the ReDBox DLC service to support the Research Data Life Cycle Framework (DLCF). The DLCF is an Australian initiative designed to assist researchers in connecting their research activities with their research data as well as the eResearch infrastructure and services used to store, manage and process the data. ReDBox 2.0, slated for release mid 2018, will support the DLCF by assisting users to provision and manage storage infrastructure, then allowing users to extract manifests of data back into ReDBox and publishing the data files alongside the data collection metadata.
 
-![ReDBox Supporting the DCC Curation Life Cycle](<%= @images() %>/curationlifecycle.png)
+![ReDBox Supporting the DCC Curation Life Cycle](./images/curationlifecycle.png)
 
 *How ReDBox 2.0 will support the DCC Curation Life Cycle*
 
@@ -31,6 +31,7 @@ With ReDBox 2.0 QCIF are using a new web development framework that will allow Q
 Through this approach researchers will have ReDBox as a single point of access to key elements of the DLCF, including planning, provisioning, data harvesting and publishing. It will give institutions greater visibility into how researchers manage and publish their data while providing assurances that researcher practices conform to Australian standards and expectations.
 
 
-![ReDBox DLC](<%= @images() %>/redboxdlc.png)
+![ReDBox DLC](./images/redboxdlc.png)
 
 *ReDBox 2.0 will be a complete data management system for supporting the Research Data Life Cycle Framework*
+

@@ -7,7 +7,7 @@
         <div class="panel panel-default <%= if page.id is @document.id then 'active' else 'inactive' %> <%= if menu? then 'hasMenus' else 'hasNoMenus' %>">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a href="<%= if menu? then menu.url else @getUrl(page) %>" data-target="<%= page.title %>" data-toggle="collapse" data-parent="#navmenus">
+              <a href="<%= if menu? then menu.url else @getDocUrl(page) %>" data-target="<%= page.title %>" data-toggle="collapse" data-parent="#navmenus">
                 <%= page.title %>
               </a>
             </h4>

@@ -5,7 +5,7 @@ heading1: "Research Planning With ReDBox"
 heading2: "ReDBox"
 type: "rowcellPage"
 ---
-![Photo by Patrick Lindenberg on Unsplash](<%= @images() %>/patrick-lindenberg-191841_web.jpg)
+![Photo by Patrick Lindenberg on Unsplash](./images/patrick-lindenberg-191841_web.jpg)
 
 ### ReDBox RDMP
 

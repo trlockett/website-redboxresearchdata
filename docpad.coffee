@@ -10,26 +10,27 @@ docpadConfig = {
       heading2: "Research Data Box"
       url: 'https://redbox-mint.github.io/website-redboxresearchdata'
       # for CDN
-      styles: ['skel.css','style.css','style-xlarge.css','local.css','bootstrap.min.css','bootstrap.css.map']
-      scripts: ['jquery.min.js','skel.min.js','skel-layers.min.js','init.js','local.js','bootstrap.min.js']
-    scriptTemplate: (script) -> "<script defer=\"defer\" src=\"#{@site.url}/js/#{script}\"></script>"
-    styleTemplate: (style) -> "<link rel=\"stylesheet\" type=\"text/css\" href=\"#{@site.url}/css/#{style}\">"
-    getSiteScripts: -> (@scriptTemplate script for script in @site.scripts).join("")
-    getSiteStyles: -> (@styleTemplate style for style in @site.styles).join("")
+      styles: ['css/skel.css','css/style.css','css/style-xlarge.css','css/local.css','css/bootstrap.min.css','css/bootstrap.css.map']
+      scripts: ['js/jquery.min.js','js/skel.min.js','js/skel-layers.min.js','js/init.js','js/local.js','js/bootstrap.min.js']
+    # scriptTemplate: (script) -> "<script defer=\"defer\" src=\"#{@site.url}/js/#{script}\"></script>"
+    # styleTemplate: (style) -> "<link rel=\"stylesheet\" type=\"text/css\" href=\"#{@site.url}/css/#{style}\">"
+    # getSiteScripts: -> (@scriptTemplate script for script in @site.scripts).join("")
+    # getSiteStyles: -> (@styleTemplate style for style in @site.styles).join("")
     getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
     getHeading1: -> if @document.heading1 then @document.heading1 else @site.heading1
     getHeading2: -> if @document.heading2 then @document.heading2 else @site.heading2
-    getUrl: (document) ->
+    getDocUrl: (document) ->
       updatedUrl = @site.url + document.url
       return updatedUrl
-    imagesFrom: (name) -> @site.url + "/images/" + name
-    jsFrom: (name) -> @site.url + "/js/" + name
-    cssFrom: (name) -> @site.url + "/css/" + name
-    fontsFrom: (name) -> @site.url + "/fonts/" + name
-    images: () -> @site.url + "/images"
-    js: () -> @site.url + "/js"
-    css: () -> @site.url + "/css"
-    fonts: () -> @site.url + "/fonts"
+    getUrl: (path) ->
+      if (path.indexOf('/') != 0)
+        path = '/' + path
+      return @site.url + path
+    getAllUrls: (paths) ->
+      results = (@getUrl path for path in paths)
+      console.log('results are ')
+      console.log(results)
+      return results
     getBoxUrl: (title) ->
       boxPage = @getCollection("html").findAllLive({type:"rowcellPage", title: "#{title}"}).toJSON()[0]
       return @site.url + boxPage.url

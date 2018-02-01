@@ -4,7 +4,7 @@
         <i class="icon big rounded underlay <%= @document.iconclass %>"></i>
       <% end %>
       <% if @document.icon: %>
-        <img class="overlay" src="<%= @images() %>/<%= @document.icon %>" alt="@document.icon" width="80px" height="70px"/>
+        <img class="overlay" src="images/<%= @document.icon %>" alt="@document.icon" width="80px" height="70px"/>
       <% end %>
   </div>
   <%- @content %>
