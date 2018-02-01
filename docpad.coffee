@@ -33,7 +33,7 @@ docpadConfig = {
         menu.url = if menu.firstUrl then menu.firstUrl else @getDocUrl(document)
         return menu
     getCleanUrls: (document) ->
-      url = '/website-redboxresearchdata' + document
+      url = @site.url + document
       title = document.split('/').join('')
       return """
              <!DOCTYPE html>
