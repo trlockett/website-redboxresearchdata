@@ -13,7 +13,8 @@
     "docpad-plugin-marked": "~2.4.0",
     "docpad-plugin-partials": "~2.11.0",
     "docpad-plugin-stylus": "~2.13.0",
-    "marked": "^0.3.12"
+    "marked": "^0.3.12",
+    "surge": "0.20.1"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
@@ -21,7 +22,8 @@
     "dev": "node_modules/.bin/docpad run",
     "start": "node_modules/.bin/docpad-server",
     "test": "docpad generate --debug --silent --env static",
-    "deploy": "docpad deploy-ghpages --silent --env static"
+    "deploy": "docpad deploy-ghpages --silent --env static",
+    "prodDeploy": "docpad generate --env static,production; node ../node_modules/surge/lib/cli.js ./out/"
   },
   "devDependencies": {
     "destroy": "^1.0.4",

@@ -58,6 +58,10 @@ docpadConfig = {
       templateData:
         site:
           url: 'http://localhost:9778'
+    production:
+      templateData:
+        site:
+         url: 'https://www.redboxresearchdata.com.au'
   plugins:
     consolidate:
       eco: true
