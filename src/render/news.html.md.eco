@@ -7,9 +7,9 @@ heading2: "ReDBox"
 ---
 ### ReDBox version 1.10 released
 
-![ReDBox Logo](<%= @getUrl("images/RedBox_Logo_Text.png") %>)
-
 June 2018
+
+ ![ReDBox Logo](<%= @getUrl("images/RedBox_Logo_Text.png") %>)
 
 QCIF is pleased to announce the release of version 1.10 of the ReDBox metadata management platform.
 
@@ -60,10 +60,29 @@ Gavin delivered an oral presentation alongside Dr Peter Sefton, from the Univers
 
 “The New Zealand audience was fantastic, they were very interested in the ReDBox platform and we are now discussing collaborations with some New Zealand institutions that we expect to commence soon.”
 
-
 ![Gavin at the eResearchNZ Conference](<%= @getUrl("images/gavin-eresnz2018.jpg") %>)
 
  *Gavin Kennedy at eResearch NZ 2018*
+ 
+### QCIF Releases the new ReDBox Research Activity Portal
+
+November 2017
+
+![RAP Logo](<%= @getUrl("images/rap.png") %>)
+
+A free online resource allowing data managers and institutions to quickly and easily register a research activity and generate a [Research Activity ID (RAiD)](https://www.raid.org.au/) is now available.
+
+The [Research Activity Portal (RAP)](https://www.raportal.org.au) produces a RAiD, a persistent identifier used to connect researchers, data, infrastructure and services to research projects.
+
+RAP also provides export functions for institutional reporting and customised forms to support an institution’s own data management requirements.
+
+RAP is available at [www.raportal.org.au](https://www.raportal.org.au) and is free for any institution to access.
+
+As part of a major revitalisation and modernisation of the ReDBox platform, QCIF’s Data Innovation Services team has collaborated with the University of Queensland based Data Life Cycle Framework (DLCF) project to create RAP. The Data Life Cycle Framework project is a collaboration between [ANDS](http://www.ands.org.au/), [RDS](https://www.rds.edu.au/), [NeCTAR](http://nectar.org.au/), [AAF](https://aaf.edu.au/) and [AARNet](https://www.aarnet.edu.au/).
+
+RAP is the first complete cloud deployment of the open-source ReDBox DLC, the new ReDBox research data management platform, which is due for full release in late 2018.
+
+An [update of ReDBox]((<%= @getUrl("download.html") %>) to support RAiDs for existing ReDBox implementations will be available early 2018. 
 
 ### ReDBox triumphs at international open repository conference
 
