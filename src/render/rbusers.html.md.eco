@@ -16,12 +16,12 @@ ReDBox is a tool for managing data catalogues within and across government agenc
 
  * [The Tropical Data Hub](https://tropicaldatahub.org) at James Cook University, Queensland, Australia
 
- * [The Sydney Research Data Registry](https://rdmp.sydney.edu.au/redbox/default/home) at the University of Sydney, NSW, Australia
-
  * [Research Footprints](https://research-data.deakin.edu.au/footprints) at Deakin University, Victoria, Australia
 
  * [Stash](https://stash.research.uts.edu.au/) at University of Technology Sydney, NSW, Australia
+ 
+ * [The RAP (Research Activity Portal)](https://www.raportal.org.au) supported by the National [Data Lifecyle Project](https://www.dlc.edu.au/) 
 ### ReDBox Community Users and Supporters
 ReDBox is supported by a strong community of Australian universities and institutions, including:
 
-![Our Community](<%= @getUrl("images/userlogos.png") %>)
+![Our Community](<%= @getUrl("images/users.jpg") %>)

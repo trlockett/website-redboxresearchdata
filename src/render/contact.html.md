@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 type: "navigablePage"
-order: 6
+order: 7
 heading1: "Contact Us"
 heading2: "ReDBox"
 ---

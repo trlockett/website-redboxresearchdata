@@ -1,0 +1,9 @@
+---
+title: "Events"
+type: "menu"
+---
+<!-- ensure there is a newline between each menu item to allow html <p> to wrap each one -->
+
+[OR2018](<%= @getUrl("or2018workshop.html") %>)
+
+

@@ -2,9 +2,69 @@
 title: "News"
 type: "navigablePage"
 order: 2
-heading1: "ReDBox News and Events"
+heading1: "ReDBox News"
 heading2: "ReDBox"
 ---
+### ReDBox version 1.10 released
+
+![ReDBox Logo](<%= @getUrl("images/RedBox_Logo_Text.png") %>)
+
+June 2018
+
+QCIF is pleased to announce the release of version 1.10 of the ReDBox metadata management platform.
+
+This release will support RAiD in the ReDBox Data Management Planning Tool (DMPT). [RAiD](https://www.raid.org.au/) is an identifier for research projects and activities. It is persistent and connects researchers, institutions, outputs and tools together to give oversight across the whole research activity and make reporting and data provenance clear and easy. Creating a RAiD is now a configurable option when creating or editing a ReDBox Data Management Plan. 
+ 
+"A key feature of ReDBox is that we keep it up to date with Australian research services and codes of practice,” said Andrew Brazzatti, support lead and technical architect for the ReDBox project.
+
+The release was previewed at the ReDBox User Group meeting in January and made available via the ReDBox GitHub repository in April. 
+
+If you would like to know more about ReDBox and QCIF's Data Innovation Services team, please email: [info@redboxresearchdata.com.au](mailto:info@redboxresearchdata.com.au).
+
+
+### Provisioner leads advances in research data management
+
+May 2018
+
+University of Technology Sydney (UTS) in conjunction with QCIF are developing “Provisioner”, an open framework to integrate and simplify research data management.
+
+Provisioner will be accessible via the ReDBox 2.0 data management platform, enabling an end-to-end data management solution that readily integrates with existing research tools to reduce software customisation and minimise manual data entry. ReDBox 2.0 is on track to be available in August this year.
+ 
+The ReDBox-Provisioner service will be an extended function of the ReDBox research data management planning tool. It will enable researchers to carry out high-level research data management tasks.
+ 
+Provisioner allows researchers to create a workspace that is attached to a service selected from a service catalogue. In the initial release, these services will include GitLab code repositories, OMERO microscopy data storage and LabArchive electronic lab notebooks. In ReDBox, the researcher can then manage that workspace with a variety of functions, including:
+
+* sharing a workspace (a directory, site or project belonging to a researcher in a particular tool) with other researchers
+* setting a workspace to be immutable (read-only)
+* making a workspace from one tool available in a different research tool.
+
+Future Provisioner development is expected to support many more useful processes, including data archiving and data publication.
+ 
+Mike Lynch, solution designer and analyst at eResearch Support at UTS, has written more about Provisioner and ReDBox in his [UTS eResearch blog post](https://eresearch.uts.edu.au/2018/04/05/provisioner_1.htm), published Thursday, 5 April 2018.
+ 
+QCIF and UTS are also working with the ANDS, Nectar and RDS partnership to develop the framework.
+
+ ![ReDBox Provisioner Diagram](<%= @getUrl("images/provisioner.jpg") %>)
+
+*The UTS Provisioner links services to their Stash (ReDBox 2.0) research data management platform via workspaces*
+
+### ReDBox at eResearchNZ 2018
+
+March 2018
+
+Gavin Kennedy, QCIF’s Data Innovation Services Manager and leader of the ReDBox team, headed to the land of the long white (research) cloud last month to attend the eResearch New Zealand conference in Queenstown.
+
+Gavin delivered an oral presentation alongside Dr Peter Sefton, from the University of Technology Sydney (UTS), about the latest advances in ReDBox in support of the research data lifecycle.
+
+“We presented our extensions to ReDBox to support customisable data management planning, integration with the UTS-developed provisioning framework, and how ReDBox provides its research data discovery services,” said Gavin. 
+
+“The New Zealand audience was fantastic, they were very interested in the ReDBox platform and we are now discussing collaborations with some New Zealand institutions that we expect to commence soon.”
+
+
+![Gavin at the eResearchNZ Conference](<%= @getUrl("images/gavin-eresnz2018.jpg") %>)
+
+ *Gavin Kennedy at eResearch NZ 2018*
+
 ### ReDBox triumphs at international open repository conference
 
 July 2017

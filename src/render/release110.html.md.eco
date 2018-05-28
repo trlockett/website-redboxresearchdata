@@ -1,0 +1,38 @@
+---
+title: "1.10.1 Release Notes"
+layout: "generic"
+order: 3
+heading1: "Releases"
+heading2: "ReDBox"
+---
+## Release 1.10.1
+
+[GitHub Link](https://github.com/redbox-mint/redbox/releases/tag/redbox-1.10.1)
+
+### Release Notes
+Added since v1.9
+================
+* Added support for new data directory
+* Added support for maintenance mode screens for admin user
+* Fixed issue with indexation of date string
+* Added support for log viewer for admin users
+* Fixed API admin pages to use API Key Service
+* Fixed issue for datetimestamps, which include milliseconds
+* Added support for OWASP security settings
+* Added fix for description escapes
+* Added fix for timePeriod in rifcs
+* Corrected API keys search path
+* Made ORCID search results open in a new tab
+* Added support for citation details for DOI
+* Fixed rifcs script leak caused by no reset in implementation
+* Fixed issue caused by spaces in attachments
+* Forced non-text MIME types to download as attachments
+* Fixed issue were ampersand markers to stop curation were being escaped
+* Support for minting [RAiDs](https://www.raid.org.au/)
+
+Added since 1.10
+================
+* Fixed javax.mail dependency clash
+* Added free text creator ids to rifcs
+
+
