@@ -12,15 +12,17 @@ ReDBox and Mint binaries are available as a self-install Tarball, an RPM via yum
 | Version | ReDBox | Mint |
 | --- | --- | --- |
 | 1.9 | [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=redbox-distro&v=1.9&c=build&e=tar.gz) | [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=mint-distro&v=1.9&c=build&e=tar.gz) |
-| Latest (1.10)| [Yum](http://dev.redboxresearchdata.com.au/yum/releases/) | [Yum](http://dev.redboxresearchdata.com.au/yum/releases/) |
-| Latest (1.10)| [Docker](https://hub.docker.com/r/qcifengineering/redbox/) | [Docker](https://hub.docker.com/r/qcifengineering/mint/) |
-| Latest (1.10)| [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=redbox-distro&v=LATEST&e=tar.gz) | [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=mint-distro&v=LATEST&e=tar.gz)
+| Latest (1.10.1)| [Yum](http://dev.redboxresearchdata.com.au/yum/releases/) | [Yum](http://dev.redboxresearchdata.com.au/yum/releases/) |
+| Latest (1.10.1)| [Docker](https://hub.docker.com/r/qcifengineering/redbox/) | [Docker](https://hub.docker.com/r/qcifengineering/mint/) |
+| Latest (1.10.1)| [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=redbox-distro&v=LATEST&e=tar.gz) | [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=mint-distro&v=LATEST&e=tar.gz)
 Please follow links for information about [installation](http://docs.redboxresearchdata.com.au/documentation/installguide) and [customisation](http://docs.redboxresearchdata.com.au/documentation/how-to/institutional-builds).
 
 ### Release Notes
 Follow the links for release notes and upgrade notes.
 * [Release 1.9](<%= @getUrl("release19.html") %>)
-* [Release 1.10](<%= @getUrl("release110.html") %>)
+* [Release 1.10.1](<%= @getUrl("release110.html") %>)
 
 ### ReDBox 2
 You can download and install a pre-release version of ReDBox by following the [installation instructions](https://redbox-mint.github.io/redbox-portal/additional-documentation/installation-guide.html).
+
+QCIF and University of Technology Sydney are thrilled to be running our first international workshop giving a hands on demonstration for implementing, configuring and using ReDBox 2.0 and the Provisioner, at the Open Repositories 2018 Conference, being held in Bozeman, Montana (USA), June 4-7, 2018. [Details here.](<%= @getUrl("release19.html") %>)
