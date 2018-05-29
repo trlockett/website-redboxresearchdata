@@ -23,7 +23,8 @@
     "start": "node_modules/.bin/docpad-server",
     "test": "docpad generate --debug --silent --env static",
     "deploy": "docpad deploy-ghpages --silent --env static",
-    "prodDeploy": "docpad generate --env static,production; node ../node_modules/surge/lib/cli.js ./out/"
+    "prodGenerate": "docpad generate --env static,production",
+    "prodDeploy": "node ./node_modules/surge/lib/cli.js ./out/ www.redboxresearchdata.com.au"
   },
   "devDependencies": {
     "destroy": "^1.0.4",
