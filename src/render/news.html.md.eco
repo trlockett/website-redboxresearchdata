@@ -5,6 +5,31 @@ order: 2
 heading1: "ReDBox News"
 heading2: "ReDBox"
 ---
+
+### ReDBox 2 previewed in Montana
+
+July 2018
+
+ReDBox was a notable presence at this year’s Open Repositories ([OR 2018](http://www.or2018.net/)) conference, held 4–7 June at Montana State University.
+
+Gavin Kennedy, [QCIF](https://www.qcif.edu.au/)’s head of Data Innovation Services, and Peter Sefton, University of Technology Sydney’s head of eResearch Services, both headed to Bozeman in the northern US state to present ReDBox to the international research repository community.
+ 
+Starting with a hands-on ReDBox workshop, Gavin and Peter previewed the new ReDBox 2 platform and demonstrated how it manages the data lifecycle workflow, including data management planning, storage provisioning, data packaging and publishing to a public portal. Workshop participants experienced configuring ReDBox instances that were provided using [QRIScloud](https://www.qriscloud.org.au/), QCIF’s cloud infrastructure. 
+ 
+Technical presentations were then given on the ReDBox [Provisioner](https://www.qcif.edu.au/index.php/news/429-provisioner-leads-advances-in-research-data-management) and the emerging [DataCrate](https://eresearch.uts.edu.au/2018/01/30/datacrate.htm) standard for data packaging, and how ReDBox ingests the DataCrate packages. Provisioner, accessible via ReDBox 2, is an open framework to integrate and simplify accessing research data management services.
+ 
+The talks culminated in a presentation on ReDBox 2 in the main ballroom of the Montana State University conference venue. 
+ 
+There was strong interest in adopting ReDBox and the UTS Provisioner from many of the conference attendees. “It was a great opportunity to meet an international community of research librarians and software developers coming together over open standards for sharing of research outputs,” said Gavin. “Their passion for open-source was inspiring as was their willingness to exchange ideas and collaborate.”
+ 
+OR 2018 follows the hugely successful Open Repositories conference held in Brisbane last year.
+ 
+If you would like to know more about ReDBox and the QCIF Data Innovation Services team behind it, please contact us at info@redboxresearchdata.com.au.
+
+ ![Gavin and Pete at OR2018](<%= @getUrl("images/or2018.png") %>)
+ 
+ *Gavin and Pete presenting in the main ballroom at Montana State University for OR2018*
+
 ### ReDBox version 1.10 released
 
 June 2018
