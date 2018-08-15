@@ -11,4 +11,12 @@ The QCIF Data Innovation Services team organises talks and workshops throughout 
 
 ### eResearch Australasia - Melbourne, October 15 - 19
 
-Fresh from its premiere at Open Repositories 2018 in Montana, QCIF and University of Technology Sydney are thrilled to be running our ReDBox 2 - Provisioner workshop at the eResearch Australasia Conference, to be held at the Pullman Melbourne, Albert Park 15 – 19 October 2018. We will be giving a hands on demonstration for implementing, configuring and using ReDBox 2.0 and the Provisioner Details are too be posted soon but the eResearch Australasia conference website is [here.](https://conference.eresearch.edu.au/)
+**Workshop: Introducing ReDBox 2: A Hands On Exploration of ReDBox 2 and the Provisioner for Institutions. 9am - 12.30pm, Monday, October 15, 2018 at the Pullman Melbourne, Albert Park.**
+
+![eResearch Australasia Banner](<%= @getUrl("images/eRA2018-banner.jpg") %>)
+
+Fresh from its premiere at Open Repositories 2018 in Montana, QCIF and University of Technology Sydney are thrilled to be running our ReDBox 2 - Provisioner workshop at the eResearch Australasia 2018 Conference, to be held 9am to 12.30pm, October 15, 2018 at the Pullman Melbourne, Albert Park. 
+
+This is a hands-on workshop for institutions to preview the new ReDBox 2 Research Data Management platform. ReDBox is the most widely used research data management platform in Australian Universities, but with its focus on managing and publishing the metadata for data collections, it has never reached its potential as an end to end solution. QCIF and UTS have collaborated to develop ReDBox 2, a comprehensive platform to support the research data life cycle. It provides an integrated data management planning capability, it allows users to provision and manage research services such as storage infrastructure and it then supports the ingest of data packages using the DataCrate standard, allowing ReDBox to publish the data alongside the metadata. In developing ReDBox 2, we have focussed on making an easy to configure web application using Sails.JS, a modern javascript framework.
+
+Details and a registration link are available via the eResearch Australasia conference website [here.](https://conference.eresearch.edu.au/2018/07/introducing-redbox-2-a-hands-on-exploration-of-redbox-2-and-the-provisioner-for-institutions/)
