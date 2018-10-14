@@ -13,6 +13,8 @@ The QCIF Data Innovation Services team organises talks and workshops throughout 
 
 **Workshop: Introducing ReDBox 2: A Hands On Exploration of ReDBox 2 and the Provisioner for Institutions. 9am - 12.30pm, Monday, October 15, 2018 at the Pullman Melbourne, Albert Park.**
 
+[Workshop Documents](<%= @getUrl("eRes2018workshop.html") %>)
+
 ![eResearch Australasia Banner](<%= @getUrl("images/eRA2018-banner.jpg") %>)
 
 Fresh from its premiere at Open Repositories 2018 in Montana, QCIF and University of Technology Sydney are thrilled to be running our ReDBox 2 - Provisioner workshop at the eResearch Australasia 2018 Conference, to be held 9am to 12.30pm, October 15, 2018 at the Pullman Melbourne, Albert Park. 

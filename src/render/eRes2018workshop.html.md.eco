@@ -1,0 +1,53 @@
+---
+title: "eResAU 2018 Workshop"
+layout: "generic"
+order: 1
+heading1: "eResearch Australasia Workshop 2018, the Pullman Melbourne, Albert Park, Monday October 15, 2018, 9am - 12.30pm "
+---
+** eResearch Australasia 2018 Workshop Documents **
+
+
+[ReDBox 2 Evaluation Installation Instructions](<%= @getUrl("docs/ReDBox Eval Install Instructions.pdf") %>): Step by step instructions on how to install an evaluation copy of ReDBox onto a Linux VM (running Ubuntu).
+
+[ReDBox 2 Config Instructions](<%= @getUrl("docs/ReDBox Eval Config Instructions.pdf") %>): Step by step instructions on how to load data to mint and modify ReDBox forms.
+
+** About The Workshop **
+
+This workshop focuses on RedBox 2, a data management / repository application widely used in Australian universities.
+
+** Who Should Attend **
+
+Part 1 is oriented towards end users of research repository platforms including library services staff, research administrators and research end users.
+
+Part 2 is oriented towards developers, systems administrators, library support staff and other technically oriented staff interested in trying out a new repository platform.
+
+Workshop content and structure will be designed to stimulate both groups alike. 
+
+** PART 1: An introduction to, and demonstration of, ReDBox: **
+* Overview of ReDBox
+* The Mint Namespace Authority
+* The Data Management Planning Tool
+* Workspaces and Provisioning
+* Metadata Management including Harvesting and Curation
+* Publication Workflows
+* Demonstration of a Complete Data Lifecycle
+
+** PART 2: An exploration of RedBOX for institutions: **
+* Structure of the platform
+* Key resources
+* How to install the product
+* Hands on configuring forms 
+* Hands on configuring workflows
+* Hands on configuring service workspaces
+* Hands on configuring Mint and ingesting data
+
+** FINISH **
+* Final Q&A and discussion
+* Optional: Details of the technology stack (nodeJS, Sails, MongoDB) 
+
+** Workshop Requirements **
+
+Part 1: No requirements
+
+Part 2: Attendees will connect to a pool of cloud VMs provided by the workshop organisers and will need to have their own laptop with SSH command-line access running Windows, Mac OSX or Linux (or a tablet with an SSH client for the really brave). Participants who are not technically oriented will be encouraged to pair with others in order to work through the hands on activities and gain an understanding of the simplicity of ReDBox configuration.
+
