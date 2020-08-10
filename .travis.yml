@@ -1,6 +1,7 @@
-dist: trusty
+dist: bionic
 language: node_js
 before_script:
+- nvm install 13 --LTS
 - npm install
 script:
 - npm run clean && npm run test

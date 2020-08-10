@@ -30,3 +30,12 @@ Download node.js (https://nodejs.org/en/download/)
 ```npm run deploy``` (Push changes up to github pages)
 
 ```git add --all .; git commit -m "<<Your commit message>>"; git push origin master``` (Pushes to github, which triggers our Travis CI build, which in turn deploys to github pages branch and url)
+ 
+## Publishing
+
+We use `https://surge.sh/` to publish the redbox site (apart from anything on github pages)
+
+All of the lifting is done through package.json. So to redeploy:
+
+- ``` npm run prodGenerate``` will create the website under ./out with links setup for production
+- ``` npm run prodDeploy``` will use surge to publish the site previously generated in './out' to www.redboxresearchdata.com.au
