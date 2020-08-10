@@ -14,7 +14,7 @@ ReDBox and Mint binaries are available as a self-install Tarball, an RPM via yum
 | 1.9 | [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=redbox-distro&v=1.9&c=build&e=tar.gz) | [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=mint-distro&v=1.9&c=build&e=tar.gz) |
 | Latest (1.10.1)| [Yum](http://dev.redboxresearchdata.com.au/yum/releases/) | [Yum](http://dev.redboxresearchdata.com.au/yum/releases/) |
 | Latest (1.10.1)| [Docker](https://hub.docker.com/r/qcifengineering/redbox/) | [Docker](https://hub.docker.com/r/qcifengineering/mint/) |
-| Latest (1.10.1)| [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=redbox-distro&v=LATEST&e=tar.gz) | [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=mint-distro&v=LATEST&e=tar.gz)
+| Latest (1.10.1)| [Tarball](https://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=redbox-distro&v=1.10.1&e=tar.gz&c=build) | [Tarball](http://dev.redboxresearchdata.com.au/nexus/service/local/artifact/maven/redirect?r=releases&g=com.googlecode.redbox-mint&a=mint-distro&v=LATEST&e=tar.gz)
 Please follow links for information about [installation](http://docs.redboxresearchdata.com.au/documentation/installguide) and [customisation](http://docs.redboxresearchdata.com.au/documentation/how-to/institutional-builds).
 
 ### Release Notes
