@@ -14,7 +14,7 @@
     "docpad-plugin-partials": "~2.11.0",
     "docpad-plugin-stylus": "~2.13.0",
     "marked": "^0.3.12",
-    "surge": "0.20.1"
+    "surge": "0.20.5"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
