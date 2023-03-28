@@ -6,7 +6,7 @@
 Creative Commons Attribution 3.0 Unported
 http://creativecommons.org/licenses/by/3.0/
 
-Copyright (C) 2017 Queensland Cyber Infrastructure Foundation (http://www.qcif.edu.au/)
+Copyright (C) 2023 Queensland Cyber Infrastructure Foundation (http://www.qcif.edu.au/)
 
 ## Use
 Download node.js (https://nodejs.org/en/download/)

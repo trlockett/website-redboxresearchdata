@@ -5,14 +5,14 @@
   "license": "CC-BY-3.0",
   "description": "Docs for Redboxresearchdata",
   "dependencies": {
-    "docpad": "~6.79.4",
-    "docpad-plugin-cleanurls": "~2.10.0",
-    "docpad-plugin-coffeescript": "~2.6.0",
-    "docpad-plugin-eco": "~2.2.1",
-    "docpad-plugin-livereload": "~2.9.0",
-    "docpad-plugin-marked": "~2.4.0",
-    "docpad-plugin-partials": "~2.11.0",
-    "docpad-plugin-stylus": "~2.13.0",
+    "docpad": "6.79.4",
+    "docpad-plugin-cleanurls": "2.10.0",
+    "docpad-plugin-coffeescript": "2.6.0",
+    "docpad-plugin-eco": "2.2.1",
+    "docpad-plugin-livereload": "2.9.0",
+    "docpad-plugin-marked": "2.4.0",
+    "docpad-plugin-partials": "2.11.0",
+    "docpad-plugin-stylus": "2.13.0",
     "marked": "^0.3.12",
     "surge": "0.20.1"
   },
@@ -28,6 +28,6 @@
   },
   "devDependencies": {
     "destroy": "^1.0.4",
-    "docpad-plugin-ghpages": "~2.6.1"
+    "docpad-plugin-ghpages": "2.6.1"
   }
 }
