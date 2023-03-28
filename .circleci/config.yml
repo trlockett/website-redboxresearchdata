@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run: |
                    npm install
+                   cp .docpad.cson ~/.docpad.cson
                    npm run clean && npm run test
                    ./prepare_gh_deploy.sh
                    npm run deploy
