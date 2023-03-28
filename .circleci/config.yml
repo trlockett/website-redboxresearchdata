@@ -4,9 +4,9 @@ jobs:
   build:
     docker:
       image: cimg/node:18.12
-      steps:
-        - checkout
-        - run: |
+    steps:
+      - checkout
+      - run: |
                    npm install
                    npm run clean && npm run test
                    ./prepare_gh_deploy.sh
