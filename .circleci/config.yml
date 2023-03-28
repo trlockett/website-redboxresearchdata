@@ -1,0 +1,12 @@
+version: 2
+jobs:
+ docker:
+   - image: 'cimg/node:18.12'
+   steps:
+     - checkout
+     - run: |
+                   npm install
+                   npm run clean && npm run test
+                   ./prepare_gh_deploy.sh
+                   npm run deploy
+                   
