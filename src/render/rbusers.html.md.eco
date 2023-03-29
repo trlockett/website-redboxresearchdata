@@ -24,4 +24,7 @@ ReDBox is a tool for managing data catalogues within and across government agenc
 ### ReDBox Community Users and Supporters
 ReDBox is supported by a strong community of Australian universities and institutions, including:
 
-![Our Community](<%= @getUrl("images/users.jpg") %>)
+![Our Current Community](<%= @getUrl("images/users.jpg") %>)
+
+
+![Our Previous Users](<%= @getUrl("images/usersold.jpg") %>)
